@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
- 
+
 $green: #4b9200;
 $orange: #f9804b;
 $yellow: #ffee2e;
@@ -10,3 +10,15 @@ $gray: gray;
 $gray_smoky: #ababab;
 $light_gray: #f1f3f2;
 $frosted_glass_white: #fdfdff;
+$black: #000000;
+$white: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:host {
+  width: 100%;
+  max-width: 1600px;
+}
