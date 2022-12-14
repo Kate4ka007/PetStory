@@ -17,9 +17,33 @@
       </div>
     </div>
     <div class="main-image__slider">
-      <div class="main-image__left"></div>
-      <div class="main-image__slider-wrapper"></div>
-      <div class="main-image__right"></div>
+      <div class="main-image__arrow">
+        <button class="main-image__button" (click)="moveRight()" [disabled]="marginLeft === 0? true : false">
+          <img src="assets/images/arrow.png" alt="arrow" style="width: 16px; height: 8px;">
+        </button>
+      </div>
+      <div class="main-image__slider-container">
+        <div class="main-image__slider-wrapper" #wrapper>
+          <div class="main-image__animal animal" *ngFor="let animal of animals" style="width: 366px; height: 426px; border: 1px solid linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%); border-radius: 5px; overflow: hidden;">
+            <div class="animal__overlay"></div>
+            <img class="animal__image" src="{{animal.src}}" alt="{{animal.name}}" style="width: 100%">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 5px 14px 16px; height: 60px;">
+              <div class="animal__info" style="display: flex; flex-direction: column;">
+                <span class="animal__name">{{animal.name}}</span>
+                <span class="animal__country">{{animal.from}}</span>
+              </div>
+
+              <span class="animal__food"><img src="{{animal.food}}" alt="food"></span>
+            </div>
+
+           </div>
+        </div>
+      </div>
+      <div class="main-image__arrow">
+        <button class="main-image__button main-image__button_right" (click)="moveLeft()" [disabled]="marginLeft === -3564? true : false">
+          <img src="assets/images/arrow.png" alt="arrow"  style="width: 16px; height: 8px;">
+        </button>
+      </div>
     </div>
   </div>
 
