@@ -59,9 +59,8 @@
     line-height: 120%;
     color: $black-blue;
     padding-bottom: 25px;
+    margin-top: 55px;
   }
-
-
 
   &__content-text {
     font-family: "Roboto";
@@ -106,15 +105,63 @@
     border: none;
     &:hover {
       cursor: pointer;
-      background: darken($color: $orange, $amount: 5);
+      background: #E47209;
     }
     &:active {
       cursor: pointer;
       background: $green;
     }
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
   }
   &__button_right {
     transform: rotate(-180deg);
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
+  }
+
+  &__bottom-button {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);;
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    padding: 16px 50px 16px 50px;
+    outline: none;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background: #E47209;
+    }
+    &:active {
+      cursor: pointer;
+      background: $green;
+    }
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
+  }
+  &__part-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    top: 0px;
+    height: 240px;
+  }
+
+  &__bottom-center {
+    align-self: center;
   }
 }
 

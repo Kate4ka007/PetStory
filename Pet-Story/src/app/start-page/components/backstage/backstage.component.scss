@@ -10,7 +10,6 @@
   background-size:cover;
   background-position-y: -80px;
   max-width: 1600px;
-  // height: 700px;
   padding-top: 20px;
   overflow: hidden;
 
@@ -69,7 +68,15 @@
     margin-bottom: 100px;
     &:hover {
       cursor: pointer;
+      background: #E47209;
+    }
+    &:active {
+      cursor: pointer;
       background: $green;
+    }
+    &:disabled {
+      background: $gray;
+      cursor: default;
     }
   }
 }
