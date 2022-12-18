@@ -1,0 +1,22 @@
+
+
+.slider {
+margin: 0 auto;
+}
+
+.slider::-webkit-scrollbar {
+  width: 5px; /* ширина для вертикального скролла */
+  height: 10px; /* высота для горизонтального скролла */
+  background-color: transparent;
+}
+
+.slider::-webkit-scrollbar-track {
+  width: 100px !important;
+}
+
+/* ползунок скроллбара */
+.slider::-webkit-scrollbar-thumb {
+background-color: orange;
+width: 50px !important;
+border-radius: 20px;
+}

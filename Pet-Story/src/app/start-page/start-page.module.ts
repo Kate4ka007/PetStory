@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 import { StartPageRoutingModule } from './start-page-routing.module';
 import { StartPageComponent } from './start-page.component';
 import { MainImageComponent } from './components/main-image/main-image.component';
@@ -15,11 +16,11 @@ import { TestimonailsComponent } from './components/testimonails/testimonails.co
     MainImageComponent,
     BackstageComponent,
     PickComponent,
-    TestimonailsComponent
+    TestimonailsComponent,
   ],
   imports: [
     CommonModule,
-    StartPageRoutingModule
+    StartPageRoutingModule,
   ]
 })
 export class StartPageModule { }
