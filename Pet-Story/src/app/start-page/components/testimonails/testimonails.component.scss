@@ -1,22 +1,31 @@
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+@import 'swiper/scss/scrollbar';
 
 
-.slider {
-margin: 0 auto;
-}
+ app-testimonails div.swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: linear-gradient(#f1f3f2, #f1f3f2) padding-box, linear-gradient( 0deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54% ) border-box !important;
+  border: 0.5px solid transparent;
+  width: 50% !important;
+  margin: 0 auto!important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  }
+   app-testimonails div.swiper-scrollbar.swiper-scrollbar-horizontal div.swiper-scrollbar-drag {
+  background-color: orange !important;
+  height: 10px;
+  }
 
-.slider::-webkit-scrollbar {
-  width: 5px; /* ширина для вертикального скролла */
-  height: 10px; /* высота для горизонтального скролла */
-  background-color: transparent;
-}
 
-.slider::-webkit-scrollbar-track {
-  width: 100px !important;
-}
 
-/* ползунок скроллбара */
-.slider::-webkit-scrollbar-thumb {
-background-color: orange;
-width: 50px !important;
-border-radius: 20px;
-}
+
+
+
+
+
+
+
+
