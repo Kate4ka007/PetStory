@@ -47,6 +47,7 @@ export class TestimonailsComponent {
   @ViewChild('swiperRef', { static: false }) swiperRef?: SwiperComponent;
 
   cards = cards;
+  content = "leave feedback";
 
   show!: boolean;
   thumbs: any;
