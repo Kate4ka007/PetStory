@@ -1,0 +1,11 @@
+@import '../../../../styles.scss';
+*{
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  background: $black;
+  padding: 40px 220px;
+  color: $white;
+}

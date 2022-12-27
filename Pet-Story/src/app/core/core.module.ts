@@ -16,6 +16,6 @@ import { ButtonComponent } from './components/button/button.component';
   imports: [
     CommonModule,
   ],
-  exports: [HeaderComponent, FooterComponent, ButtonComponent]
+  exports: [HeaderComponent, FooterComponent, ButtonComponent, FooterComponent]
 })
 export class CoreModule { }
