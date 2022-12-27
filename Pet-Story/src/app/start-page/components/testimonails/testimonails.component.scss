@@ -1,0 +1,66 @@
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+@import "swiper/scss/scrollbar";
+@import "../../../../styles.scss";
+
+app-testimonails div.swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: linear-gradient(#f1f3f2, #f1f3f2) padding-box,
+    linear-gradient(
+        0deg,
+        rgba(254, 189, 171, 0.74) 30.06%,
+        rgba(243, 169, 248, 0.66) 50.74%,
+        #e0d8f0 80.49%,
+        #eaf7fe 127.9%,
+        #eaf7fe 149.54%
+      )
+      border-box !important;
+  border: 0.5px solid transparent;
+  width: 50% !important;
+  margin: 0 auto !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8px;
+  border-radius: 5px;
+}
+app-testimonails
+  div.swiper-scrollbar.swiper-scrollbar-horizontal
+  div.swiper-scrollbar-drag {
+  background: linear-gradient(
+    113.96deg,
+    #f9804b 1.49%,
+    #fe9013 101.44%
+  ) !important;
+  height: 8px;
+}
+
+:host {
+  width: 100%;
+  background: $white;
+}
+
+.testimonials {
+  width: 100%;
+  background: $white;
+  padding: 140px 220px;
+  box-sizing: border-box;
+
+  &__title {
+    @include fonts(36px, 130%);
+    text-align: center;
+    color: $black-blue;
+    margin-bottom: 47px;
+  }
+
+}
+.swiper {
+  height: 440px;
+  margin-bottom: 30px;
+}
+
+.testimonials div.button app-button.test  button.button {
+  border-radius: 5px;
+  width: 300px;
+  height: 54px;
+}

@@ -5,17 +5,19 @@ import { CoreRoutingModule } from './core-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogoComponent } from './components/logo/logo.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     LogoComponent,
+    ButtonComponent,
   ],
   imports: [
     CommonModule,
     CoreRoutingModule
   ],
-  exports: [HeaderComponent, FooterComponent]
+  exports: [HeaderComponent, FooterComponent, ButtonComponent]
 })
 export class CoreModule { }

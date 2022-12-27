@@ -1,1 +1,123 @@
-<p>main-image works!</p>
+<section class="main-image">
+  <div class="main-image__content">
+    <div class="main-image__part-top">
+      <div class="main-image__title">
+        <div class="main-image__title-image">
+          <img
+            src="assets/images/bamboo-cap.png"
+            alt="man-in-hat"
+            class="main-imaige__title-man"
+          />
+        </div>
+        <div class="main-image__title-content">
+          <div class="main-image__content-title">
+            The Backstage of the Wilderness World.
+          </div>
+          <div class="main-image__content-text">
+            The site was founded on the basis of a volunteer movement to protect
+            and care for animals.
+          </div>
+          <div class="main-image__content-subtitle">How it works</div>
+          <div class="main-image__content-text">
+            The main goal is to help the animals, as well as the nature reserves
+            and zoos where they are kept. We are currently working on video
+            projects targeting pandas in China, eagles on an island near Los
+            Angeles, alligators in Florida and gorillas in the Congo. These have
+            a total of more than 1,500 mammals and reptiles.
+          </div>
+        </div>
+      </div>
+      <div class="main-image__img">
+        <img
+          class="main-image__image"
+          src="assets/images/flower_foto1.png"
+          alt="flowers"
+        />
+      </div>
+    </div>
+    <div class="main-image__slider">
+      <div class="main-image__arrow">
+        <button
+          class="main-image__button"
+          (click)="moveRight()"
+          [disabled]="marginLeft === 0 ? true : false"
+        >
+          <img
+            src="assets/images/arrow.png"
+            alt="arrow"
+            style="width: 16px; height: 8px"
+          />
+        </button>
+      </div>
+      <div class="main-image__slider-container">
+        <div class="main-image__slider-wrapper" #wrapper>
+          <div
+            class="main-image__animal animal"
+            *ngFor="let animal of animals"
+            style="
+              width: 366px;
+              height: 426px;
+              border: 1px solid
+                linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+              border-radius: 5px;
+              overflow: hidden;
+            "
+          >
+            <div class="animal__overlay"></div>
+            <img
+              class="animal__image"
+              src="{{ animal.src }}"
+              alt="{{ animal.name }}"
+              style="width: 100%"
+            />
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 14px 5px 14px 16px;
+                height: 60px;
+              "
+            >
+              <div
+                class="animal__info"
+                style="display: flex; flex-direction: column"
+              >
+                <span class="animal__name">{{ animal.name }}</span>
+                <span class="animal__country">{{ animal.from }}</span>
+              </div>
+
+              <span class="animal__food"
+                ><img src="{{ animal.food }}" alt="food"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-image__arrow">
+        <button
+          class="main-image__button main-image__button_right"
+          (click)="moveLeft()"
+          [disabled]="marginLeft === -3564 ? true : false"
+        >
+          <img
+            src="assets/images/arrow.png"
+            alt="arrow"
+            style="width: 16px; height: 8px"
+          />
+        </button>
+      </div>
+    </div>
+    <div class="main-image__part-bottom">
+      <div class="main-image__bottom-left">
+        <img src="assets/images/palm_foto.png" alt="palm" />
+      </div>
+      <div class="main-image__bottom-center">
+        <button class="main-image__bottom-button">choose your favorite</button>
+      </div>
+      <div class="main-image__bottom-right">
+        <img src="assets/images/flower-bottom.png" alt="flower" />
+      </div>
+    </div>
+  </div>
+</section>
