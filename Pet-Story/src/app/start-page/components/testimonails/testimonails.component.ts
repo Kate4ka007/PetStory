@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { SwiperComponent } from 'swiper/angular';
 
-// import Swiper core and required components
+
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -20,9 +20,9 @@ import SwiperCore, {
   Controller,
 } from 'swiper';
 import { BehaviorSubject } from 'rxjs';
-import Swiper from 'swiper/types/swiper-class';
+import { cards } from 'src/assets/data/testimonails';
 
-// install Swiper components
+
 SwiperCore.use([
   Navigation,
   Pagination,
@@ -45,6 +45,8 @@ SwiperCore.use([
 })
 export class TestimonailsComponent {
   @ViewChild('swiperRef', { static: false }) swiperRef?: SwiperComponent;
+
+  cards = cards;
 
   show!: boolean;
   thumbs: any;

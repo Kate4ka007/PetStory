@@ -1,7 +1,7 @@
 <section>
   <div class="slider" style="width: 60%; background: white; margin: 0 auto; ">
     <swiper
-      [slidesPerView]="3"
+      [slidesPerView]="4"
       [spaceBetween]="50"
       (swiper)="setControlledSwiper($event)"
       [scrollbar]="{ draggable: true }"
@@ -10,12 +10,8 @@
         enabled: true
       }"
     >
-      <ng-template swiperSlide><div style="height: 400px;">Slide 1</div></ng-template>
-      <ng-template swiperSlide><div style="height: 400px;">Slide 2</div></ng-template>
-      <ng-template swiperSlide><div style="height: 400px;">Slide 3</div></ng-template>
-      <ng-template swiperSlide><div style="height: 400px;">Slide 4</div></ng-template>
-      <ng-template swiperSlide><div style="height: 400px;">Slide 5</div></ng-template>
-      <ng-template swiperSlide><div style="height: 400px;">Slide 6</div></ng-template>
+      <ng-template swiperSlide *ngFor="let card of cards;"><app-card [card]="card" style="height: 400px;">Slide 1</app-card></ng-template>
+
     </swiper>
   </div>
 </section>
