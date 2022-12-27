@@ -44,6 +44,7 @@ app-testimonails
   width: 100%;
   background: $white;
   padding: 140px 220px;
+  box-sizing: border-box;
 
   &__title {
     @include fonts(36px, 130%);
@@ -55,8 +56,11 @@ app-testimonails
 }
 .swiper {
   height: 440px;
+  margin-bottom: 30px;
 }
 
 .testimonials div.button app-button.test  button.button {
   border-radius: 5px;
+  width: 300px;
+  height: 54px;
 }
