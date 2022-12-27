@@ -1,8 +1,9 @@
-<section>
-  <div class="slider" style="width: 60%; background: white; margin: 0 auto; ">
-    <swiper
+<section class="testimonials">
+  <h2 class="testimonials__title">Testimonials</h2>
+  <div class="slider" style="width: 1160px; background: white; margin: 0 auto; ">
+    <swiper class="swiper"
       [slidesPerView]="4"
-      [spaceBetween]="50"
+      [spaceBetween]="30"
       (swiper)="setControlledSwiper($event)"
       [scrollbar]="{ draggable: true }"
       [watchSlidesProgress]="true"
@@ -13,5 +14,7 @@
       <ng-template swiperSlide *ngFor="let card of cards;"><app-card [card]="card" style="height: 400px;">Slide 1</app-card></ng-template>
 
     </swiper>
+
   </div>
+  <div><button>leave feedback</button></div>
 </section>
