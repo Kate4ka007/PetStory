@@ -8,4 +8,31 @@
   background: $black;
   padding: 40px 220px;
   color: $white;
+  &__subsrcibe {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__list {
+    display: flex;
+    gap: 48px;
+  }
+  &__list-item {
+    list-style: none;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.footer div.footer__button app-button.test  button.button {
+  border-radius: 5px;
+  width: 300px;
+  height: 54px;
 }
