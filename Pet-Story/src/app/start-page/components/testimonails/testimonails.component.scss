@@ -32,7 +32,7 @@ app-testimonails
     #f9804b 1.49%,
     #fe9013 101.44%
   ) !important;
-  height: 8px;
+  height: 7px;
 }
 
 :host {
@@ -45,12 +45,21 @@ app-testimonails
   background: $white;
   padding: 140px 220px;
   box-sizing: border-box;
+  position: relative;
 
   &__title {
     @include fonts(36px, 130%);
     text-align: center;
     color: $black-blue;
     margin-bottom: 47px;
+  }
+  &__leav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    img {
+      display: block;
+    }
   }
 
 }

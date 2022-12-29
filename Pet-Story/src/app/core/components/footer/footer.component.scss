@@ -1,0 +1,92 @@
+@import '../../../../styles.scss';
+*{
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  background: $black;
+  padding: 40px 220px;
+  padding-bottom: 50px;
+  color: $white;
+  &__subsrcibe {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__list {
+    display: flex;
+    gap: 48px;
+  }
+  &__list-item {
+    list-style: none;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
+  &__design-author,
+  &__design-copyright {
+    @include fonts(16px, 130%, 100);
+    color: rgb(255 255 255 / 60%);
+    margin-top: 10px;
+  }
+  &__top {
+    margin-bottom: 44px;
+  }
+}
+
+.footer div.footer__button app-button.test  button.button {
+  border-radius: 5px;
+  width: 300px;
+  height: 54px;
+}
+
+.form {
+  box-sizing: border-box;
+  &__subscribe {
+    margin-bottom: 16px;
+  }
+  &__input {
+    border: 1px solid $orange;
+    background: none;
+    border-radius: 2px;
+    padding: 9px;
+    @include fonts(16px, 140%);
+    color: #bdbdbd;
+    outline: none;
+  }
+  &__input::placeholder {
+    @include fonts(16px, 140%);
+    color: #bdbdbd;
+    min-height: 42px;
+  }
+  &__button {
+    background: #f1f3f2;
+    border: 1px solid #333b41;
+    border-radius: 5px;
+    @include fonts(16px, 140%);
+    padding: 10px 40px;
+    height: 42px;
+  }
+  &__form {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 14px;
+    @include fonts(24px, 120%);
+    color: #ffffff;
+  }
+
+}

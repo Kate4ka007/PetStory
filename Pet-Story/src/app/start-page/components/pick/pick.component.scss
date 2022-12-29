@@ -13,7 +13,7 @@
 
   &__top {
     padding-top: 40px;
-    padding-left: 100px;
+
   }
 
   &__top-title {
@@ -27,6 +27,7 @@
     @include fonts(24px, 120%, 500);
     color: $black-blue;
     padding-bottom: 40px;
+    padding-left: 100px;
   }
 
   &__bottom-cards {
@@ -41,6 +42,7 @@
     @include fonts(16px, 130%);
     color: $black-blue;
     width: 863px;
+    padding-left: 100px;
   }
   &__top-paragraph:first-child {
     @include fonts(16px, 130%, 700);

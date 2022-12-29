@@ -1,1 +1,40 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__subsrcibe">
+      <div class="footer__logo">
+        <app-logo></app-logo>
+      </div>
+      <div class="footer__form form">
+        <h3 class="form__title">Subscribe to our news</h3>
+        <form class="form__form" action="">
+          <input class="form__input" type="text" placeholder="Enter your email">
+          <button class="form__button" type="submit">Submit</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="footer__button">
+      <app-button [content]="content" class="test"></app-button>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__nets">
+      <a href="##"><img src="assets/images/facebook.png" alt="facebook"></a>
+      <a href="##"><img src="assets/images/twitter.png" alt="twitter"></a>
+      <a href="##"><img src="assets/images/instagram.png" alt="instagram"></a>
+      <a href="##"><img src="assets/images/youtube.png" alt="youtube"></a>
+    </div>
+    <div class="footer__links">
+      <ul class="footer__list">
+        <li class="footer__list-item"><a class="footer__link" routerLink="/" routerLinkActivate="active">About</a></li>
+        <li class="footer__list-item"><a class="footer__link" routerLink="/animals" routerLinkActivate="active">Zoos</a></li>
+        <li class="footer__list-item"><a class="footer__link" routerLink="/map" routerLinkActivate="active">Map</a></li>
+        <li class="footer__list-item"><a class="footer__link" routerLink="/contact" routerLinkActivate="active">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="footer__design">
+      <div class="footer__design-author">Designed by Alisa Samborskaya</div>
+      <div class="footer__design-copyright">©RSSchool & ©Yem Digital 2021</div>
+    </div>
+  </div>
+</footer>
