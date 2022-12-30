@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 .map {
   background-color: $ocean;
@@ -12,48 +12,10 @@
 #map {
   height: calc(100vh - 500px);
   width: 100%;
+  position: relative;
   //max-width: 600px;
 }
 
-app-map #map .leaflet-control-zoom.leaflet-control-zoom .leaflet-control-zoom-in {
-  background-color: white;
-  border: 1px solid gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  text-decoration: none !important;
+app-map #map .leaflet-control-attribution.leaflet-control {
+  display: none;
 }
-app-map #map .leaflet-control-zoom.leaflet-control-zoom .leaflet-control-zoom-out {
-  background-color: white;
-  border: 1px solid gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  text-decoration: none !important;
-}
-
-app-map #map .leaflet-control-zoom.leaflet-control-zoom  {
-position: absolute;
-right: 10px;
-bottom: 10px;
-}
-
-app-map #map .leaflet-control-zoom.leaflet-control-zoom .leaflet-control-zoom-out span {
-font-size: 30px;
-text-decoration: none !important;
-color: #000;
-}
-
-app-map #map .leaflet-control-zoom.leaflet-control-zoom .leaflet-control-zoom-in span {
-  font-size: 30px;
-  text-decoration: none !important;
-  color: #000;
-  }
-
-  app-map #map .leaflet-control-attribution.leaflet-control {
-    display: none;
-  }
