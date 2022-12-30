@@ -1,0 +1,9 @@
+@import '../../styles.scss';
+
+.map {
+  background-color: $ocean;
+  height: calc(100vh - 500px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
