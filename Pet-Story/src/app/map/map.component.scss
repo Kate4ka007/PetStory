@@ -2,7 +2,7 @@
 
 .map {
   background-color: $ocean;
-  height: 945px;
+  height: calc(100vh - 500px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,10 +11,9 @@
   padding: 0;
 }
 #map {
-  height: 945px;
+  height: calc(100vh - 500px);
   width: 100%;
-  position: relative;
-  //max-width: 600px;
+  position: relative;  
 }
 
 app-map #map .leaflet-control-attribution.leaflet-control {
