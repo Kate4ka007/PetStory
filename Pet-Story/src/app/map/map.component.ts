@@ -64,7 +64,7 @@ export class MapComponent implements AfterViewInit {
         const marker3 = L.marker([200, 200], { icon }).addTo(this.map).bindPopup('buttonRemove'); */
 
     const createPopup = (animal: string, country: string) => {
-      return `<div class="popup"><div class="popup__title">${animal},</div><div class="popup__subtitle">${country}</div><button class="popup__button">Watch online</button></div>`;
+      return `<div class="popup"><div class="popup__title">${animal}</div><div class="popup__subtitle">${country}</div><button class="popup__button">Watch online</button></div>`;
     };
 
     const pandaUrl = 'assets/images/panda-marker.svg',
@@ -75,16 +75,19 @@ export class MapComponent implements AfterViewInit {
 
     const pandasUrl = 'assets/images/pandas.svg',
       pandasBounds = [[-20, 140], [-40, 160]];
-
     const pandas = L.imageOverlay(pandasUrl, pandasBounds, { className: 'panda' }).addTo(this.map);
     const pandasRect = L.marker([-30, 150], { icon: rectangle }).addTo(this.map).bindPopup(createPopup('Panda', 'China'));
 
     const gorillasUrl = 'assets/images/gorillas.svg',
       gorillasBounds = [[-52, 0], [-72, 20]];
-
     const gorillas = L.imageOverlay(gorillasUrl, gorillasBounds, { className: 'panda' }).addTo(this.map);
     const gorillasRect = L.marker([-62, 10], { icon: rectangle }).addTo(this.map).bindPopup(createPopup('Gorillas', 'Congo, Africa'));
 
+    const crocodileUrl = 'assets/images/crocodile.svg',
+      crocodileBounds = [[-23, -145], [-43, -113]];
+
+    const crocodile = L.imageOverlay(crocodileUrl, crocodileBounds, { className: 'panda' }).addTo(this.map);
+    const crocodileRect = L.marker([-33, -126], { icon: rectangle }).addTo(this.map).bindPopup(createPopup('Crocodile', 'Florida, USA'));
 
 
   }
