@@ -24,6 +24,24 @@ app-map #map div.leaflet-pane.leaflet-popup-pane div.leaflet-popup.leaflet-zoom-
   transform: rotate(180deg);
 }
 
+app-map #map div.leaflet-control-container div.leaflet-bottom.leaflet-right div.leaflet-control-zoom.leaflet-bar.leaflet-control a.leaflet-control-zoom-in span {
+    font-size: 40px;
+}
+
+app-map #map div.leaflet-control-container div.leaflet-bottom.leaflet-right div.leaflet-control-zoom.leaflet-bar.leaflet-control a.leaflet-control-zoom-out span {
+  font-size: 40px;
+}
+
+app-map #map div.leaflet-control-container div.leaflet-bottom.leaflet-right div.leaflet-control-zoom.leaflet-bar.leaflet-control a.leaflet-control-zoom-in,
+app-map #map div.leaflet-control-container div.leaflet-bottom.leaflet-right div.leaflet-control-zoom.leaflet-bar.leaflet-control a.leaflet-control-zoom-out {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .popup {
 /*   padding: 10px;
   padding-bottom: 15px; */

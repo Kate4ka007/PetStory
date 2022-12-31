@@ -85,10 +85,18 @@ export class MapComponent implements AfterViewInit {
 
     const crocodileUrl = 'assets/images/crocodile.svg',
       crocodileBounds = [[-23, -145], [-43, -113]];
-
     const crocodile = L.imageOverlay(crocodileUrl, crocodileBounds, { className: 'panda' }).addTo(this.map);
     const crocodileRect = L.marker([-33, -126], { icon: rectangle }).addTo(this.map).bindPopup(createPopup('Crocodile', 'Florida, USA'));
 
+    const eagle1Url = 'assets/images/eagle1.svg',
+      eagle1Bounds = [[-5, -224], [-25, -204]];
+    const eagle1 = L.imageOverlay(eagle1Url, eagle1Bounds, { className: 'panda' }).addTo(this.map);
+    const eagle1Rect = L.marker([-15, -214], { icon: rectangle }).addTo(this.map).bindPopup(createPopup('Eagle', 'Los Angeles, USA'));
+
+    const eagle2Url = 'assets/images/eagle2.svg',
+      eagle2Bounds = [[-15, -205], [-35, -185]];
+    const eagle2 = L.imageOverlay(eagle2Url, eagle2Bounds, { className: 'panda' }).addTo(this.map);
+    const eagle2Rect = L.marker([-25, -195], { icon: rectangle }).addTo(this.map).bindPopup(createPopup('Eagle', 'Los Angeles, USA'));
 
   }
 }
