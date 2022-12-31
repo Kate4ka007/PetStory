@@ -2,15 +2,16 @@
 
 .map {
   background-color: $ocean;
-  height: calc(100vh - 500px);
+  height: 945px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
+  padding: 0;
 }
 #map {
-  height: calc(100vh - 500px);
+  height: 945px;
   width: 100%;
   position: relative;
   //max-width: 600px;
@@ -18,4 +19,32 @@
 
 app-map #map .leaflet-control-attribution.leaflet-control {
   display: none;
+}
+app-map #map div.leaflet-pane.leaflet-popup-pane div.leaflet-popup.leaflet-zoom-animated {
+  transform: rotate(180deg);
+}
+
+.popup {
+/*   padding: 10px;
+  padding-bottom: 15px; */
+  &__title,
+  &__subtitle {
+    @include fonts(16px, 140%);
+    color: $black;
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+  &__button {
+    @include fonts(16px, 140%);
+    color: $green;
+    padding: 4px 17px;
+    background: #f1f3f2;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    &:hover {
+      background: darken($color: #f1f3f2, $amount: 5);
+    }
+  }
 }
