@@ -79,6 +79,12 @@ export class MapComponent implements AfterViewInit {
     const pandas = L.imageOverlay(pandasUrl, pandasBounds, { className: 'panda' }).addTo(this.map);
     const pandasRect = L.marker([-30, 150], { icon: rectangle }).addTo(this.map).bindPopup(createPopup('Panda', 'China'));
 
+    const gorillasUrl = 'assets/images/gorillas.svg',
+      gorillasBounds = [[-52, 0], [-72, 20]];
+
+    const gorillas = L.imageOverlay(gorillasUrl, gorillasBounds, { className: 'panda' }).addTo(this.map);
+    const gorillasRect = L.marker([-62, 10], { icon: rectangle }).addTo(this.map).bindPopup(createPopup('Gorillas', 'Congo, Africa'));
+
 
 
   }
