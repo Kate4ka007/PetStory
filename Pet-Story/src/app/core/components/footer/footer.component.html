@@ -26,10 +26,10 @@
     </div>
     <div class="footer__links">
       <ul class="footer__list">
-        <li class="footer__list-item"><a class="footer__link" routerLink="/" routerLinkActivate="active">About</a></li>
-        <li class="footer__list-item"><a class="footer__link" routerLink="/animals" routerLinkActivate="active">Zoos</a></li>
-        <li class="footer__list-item"><a class="footer__link" routerLink="/map" routerLinkActivate="active">Map</a></li>
-        <li class="footer__list-item"><a class="footer__link" routerLink="/contact" routerLinkActivate="active">Contact us</a></li>
+        <li class="footer__list-item"><a class="footer__link" routerLink="/" routerLinkActivate="active" [class.active]="!(url.includes('map') || url.includes('animals') || url.includes('contact'))">About</a></li>
+        <li class="footer__list-item"><a class="footer__link" routerLink="/animals/gorilla" routerLinkActivate="active" [class.active]="url.includes('animals')">Zoos</a></li>
+        <li class="footer__list-item"><a class="footer__link" routerLink="/map" routerLinkActivate="active" [class.active]="url.includes('map')">Map</a></li>
+        <li class="footer__list-item"><a class="footer__link" routerLink="/contact" routerLinkActivate="active" [class.active]="url.includes('contact')">Contact us</a></li>
       </ul>
     </div>
     <div class="footer__design">

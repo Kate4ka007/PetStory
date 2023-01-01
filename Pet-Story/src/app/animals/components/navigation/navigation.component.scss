@@ -2,6 +2,10 @@
 
 .nav {
   background: $orange-grad;
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
   &__list-item {
     list-style: none;
   }
