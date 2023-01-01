@@ -33,6 +33,13 @@
   &__link {
     text-decoration: none;
     color: $white;
+    &:hover {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  &__link.active {
+    color: $orange;
   }
   &__design-author,
   &__design-copyright {
@@ -44,6 +51,7 @@
     margin-bottom: 44px;
   }
 }
+
 
 .footer div.footer__button app-button.test  button.button {
   border-radius: 5px;

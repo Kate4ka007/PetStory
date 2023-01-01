@@ -1,0 +1,9 @@
+.animals {
+  position: relative;
+  min-height: calc(100vh - 500px);
+  &__sidebar {
+    position: absolute;
+    left: 30px;
+    top: 190px;
+  }
+}

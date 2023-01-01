@@ -1,0 +1,31 @@
+@import '../../../../styles.scss';
+
+.nav {
+  background: $orange-grad;
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__list-item {
+    list-style: none;
+  }
+  &__link {
+    background: white;
+    border: 1px solid orangered;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      border: 1px solid hsl(120, 100%, 25%);
+    }
+  }
+  &__icon {
+    &:hover{
+      filter: invert(26%) sepia(89%) saturate(1571%) hue-rotate(96deg) brightness(95%) contrast(104%);
+    }
+
+  }
+}

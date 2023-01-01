@@ -1,5 +1,8 @@
 @import '../../../../../styles.scss';
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .card {
   background: linear-gradient(#f1f3f2, #f1f3f2) padding-box, linear-gradient( 0deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54% ) border-box !important;
   border: 2px solid transparent;
@@ -12,10 +15,13 @@
   &__author {
     display: flex;
     gap: 10px;
+    height: 40px;
+    margin-bottom: 10px;
   }
   &__title {
     @include fonts(16px, 120%);
     color: $black;
+    margin-bottom: 5px;
   }
   &__place {
     @include fonts(15px, 120%, 300);
@@ -27,6 +33,7 @@
   &__subtitle {
     display: flex;
     gap: 30px;
+    padding: 0;
   }
   &__text {
     height: 308px;
@@ -36,6 +43,6 @@
     color: $gray;
   }
   &__author-info {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
 }
