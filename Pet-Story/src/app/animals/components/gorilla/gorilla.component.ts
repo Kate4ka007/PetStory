@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./gorilla.component.scss']
 })
 export class GorillaComponent {
+  clicked = false;
 
+  onClick() {
+    this.clicked = true;
+  }
 }

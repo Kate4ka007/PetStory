@@ -1,0 +1,18 @@
+@import '../../../../styles.scss';
+
+.animal {
+  margin: 0 auto;
+  width: 1162px;
+
+  &__title {
+    text-align: left;
+    @include fonts(48px, 120%);
+    color: $black-blue;
+  }
+
+  &__youtube {
+    width: 1162px;
+    height: 652px;
+  }
+
+}

@@ -8,14 +8,5 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./animals.component.scss']
 })
 export class AnimalsComponent {
-  private id!: number;
-
-  private routeSubscription: Subscription;
-
-  constructor(private route: ActivatedRoute) {
-    this.routeSubscription = route.params.subscribe(
-      (params) => (this.id = params['id'])
-    );
-  }
 
 }
