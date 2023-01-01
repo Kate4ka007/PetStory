@@ -33,6 +33,10 @@
   &__link {
     text-decoration: none;
     color: $white;
+    &:hover {
+      text-decoration: none;
+      color: $white;
+    }
   }
   &__design-author,
   &__design-copyright {
