@@ -8,6 +8,7 @@
     text-align: left;
     @include fonts(48px, 120%);
     color: $black-blue;
+    padding-bottom: 10px;
   }
 
   &__youtube {
