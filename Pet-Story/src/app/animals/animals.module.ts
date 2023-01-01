@@ -12,6 +12,7 @@ import { EagleComponent } from './components/eagle/eagle.component';
 import { SlothComponent } from './components/sloth/sloth.component';
 import { PenguinComponent } from './components/penguin/penguin.component';
 import { CheetahComponent } from './components/cheetah/cheetah.component';
+import { VideoComponent } from './components/video/video.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { CheetahComponent } from './components/cheetah/cheetah.component';
     EagleComponent,
     SlothComponent,
     PenguinComponent,
-    CheetahComponent
+    CheetahComponent,
+    VideoComponent
   ],
   imports: [
     CommonModule,
