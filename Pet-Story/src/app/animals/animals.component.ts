@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-animals',
   templateUrl: './animals.component.html',
   styleUrls: ['./animals.component.scss']
 })
-export class AnimalsComponent implements OnInit {
+export class AnimalsComponent {
+  private id!: number;
 
-  constructor() { }
+  private routeSubscription: Subscription;
 
-  ngOnInit(): void {
+  constructor(private route: ActivatedRoute) {
+    this.routeSubscription = route.params.subscribe(
+      (params) => (this.id = params['id'])
+    );
   }
 
 }
