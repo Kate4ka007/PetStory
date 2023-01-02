@@ -14,6 +14,7 @@ import { SlothComponent } from './components/sloth/sloth.component';
 import { PenguinComponent } from './components/penguin/penguin.component';
 import { CheetahComponent } from './components/cheetah/cheetah.component';
 import { VideoComponent } from './components/video/video.component';
+import { InfoComponent } from './components/info/info.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { VideoComponent } from './components/video/video.component';
     SlothComponent,
     PenguinComponent,
     CheetahComponent,
-    VideoComponent
+    VideoComponent,
+    InfoComponent
   ],
   imports: [
     CommonModule,
