@@ -4,12 +4,23 @@
   background: $orange-grad;
   border-radius: 5px;
   padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__wrapper {
+    height: 530px;
+    overflow: hidden;
+  }
   &__list {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: 1s;
+  }
+  &__list.down {
+    transform: translate(0, -91px);
   }
   &__list-item {
     list-style: none;
@@ -23,9 +34,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
     &:hover {
       border: 1px solid hsl(120, 100%, 25%);
     }
+  }
+  &__link.rotate {
+    transform: rotate(180deg);
   }
   &__icon {
     &:hover{

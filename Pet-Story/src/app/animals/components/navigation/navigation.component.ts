@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
+  down = false;
+  isRotate = false;
   links = [
     'gorilla',
     'crocodile',
@@ -14,4 +16,9 @@ export class NavigationComponent {
     'penguin',
     'cheetah',
   ];
+  isDown() {
+    this.down = !this.down;
+    this.isRotate = !this.isRotate;
+  }
+
 }
