@@ -13,14 +13,17 @@
     justify-content: center;
     outline: none;
     border: none;
+
     &:hover {
       cursor: pointer;
       background: #e47209;
     }
+
     &:active {
       cursor: pointer;
       background: $green;
     }
+
     &:disabled {
       background: $gray;
       cursor: default;
@@ -29,6 +32,7 @@
 
   &__button_right {
     transform: rotate(-180deg);
+
     &:disabled {
       background: $gray;
       cursor: default;
@@ -63,8 +67,6 @@
   text-align: center;
   font-size: 18px;
   background: #ffffff;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -73,10 +75,10 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
+  /*   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  -webkit-align-items: center; */
+  // align-items: center;
 }
 
 .swiper-slide img {
@@ -129,13 +131,13 @@
 
 app-video div.swiper-wrapper div.swiper-slide.swiper-slide-visible,
 app-video div.swiper-wrapper div.swiper-slide.swiper-slide-prev {
-width: 268px;
-height: 210px;
+  width: 268px;
+  height: 210px;
 }
 
 
 app-video .mySwiper div.swiper-wrapper {
-height: 210px;
+  height: 210px;
 }
 
 app-video .swiper-button-prev.swiper-button-disabled,

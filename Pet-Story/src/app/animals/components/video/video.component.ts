@@ -15,6 +15,22 @@ SwiperCore.use([FreeMode, Navigation, Thumbs]);
 })
 export class VideoComponent {
   thumbsSwiper: any;
+
+  videoLinks = [
+    'https://www.youtube.com/embed/rgXWDk7rh4w',
+    'https://www.youtube.com/embed/rgXWDk7rh4w',
+    'https://www.youtube.com/embed/rgXWDk7rh4w',
+    'https://www.youtube.com/embed/rgXWDk7rh4w',
+    'https://www.youtube.com/embed/rgXWDk7rh4w'
+  ];
+
+  videoImages = [
+    'assets/images/pandas.jpg',
+    'assets/images/pandas.jpg',
+    'assets/images/pandas.jpg',
+    'assets/images/pandas.jpg',
+    'assets/images/pandas.jpg'
+  ];
   @ViewChild('Tswiper', { static: false }) swiper?: SwiperComponent;
   slideNext() {
     this.swiper!.swiperRef.slideNext(500);
