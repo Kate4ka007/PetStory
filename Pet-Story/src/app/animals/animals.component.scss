@@ -1,10 +1,13 @@
 @import '../../styles.scss';
 
+:host {
+  background: $white;
+}
+
 .animals {
   position: relative;
-  min-height: calc(100vh - 500px);
+  // min-height: calc(100vh - 500px);
   padding-top: 40px;
-  b
 
   &__sidebar {
     position: absolute;
