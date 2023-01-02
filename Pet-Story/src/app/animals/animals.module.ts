@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { SwiperModule } from "swiper/angular";
 
 import { AnimalsRoutingModule } from './animals-routing.module';
 import { AnimalsComponent } from './animals.component';
@@ -32,6 +33,7 @@ import { VideoComponent } from './components/video/video.component';
     CommonModule,
     RouterModule,
     AnimalsRoutingModule,
+    SwiperModule,
   ]
 })
 export class AnimalsModule { }

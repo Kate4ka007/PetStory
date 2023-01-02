@@ -1,5 +1,9 @@
 @import '../../../../styles.scss';
 
+:host {
+  background: $white;
+}
+
 .animal {
   margin: 0 auto;
   width: 1162px;
@@ -9,11 +13,12 @@
     @include fonts(48px, 120%);
     color: $black-blue;
     padding-bottom: 10px;
+    width: 1162px;
   }
 
   &__youtube {
     width: 1162px;
-    height: 652px;
+    margin: 0 auto;
   }
 
 }
