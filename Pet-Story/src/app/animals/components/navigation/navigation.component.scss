@@ -33,4 +33,12 @@
     }
 
   }
+
+}
+
+.nav__link.active {
+  border: 1px solid hsl(120, 100%, 25%);
+  .nav__icon {
+    filter: invert(26%) sepia(89%) saturate(1571%) hue-rotate(96deg) brightness(95%) contrast(104%);
+  }
 }

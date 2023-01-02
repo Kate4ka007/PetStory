@@ -1,8 +1,12 @@
 <nav class="nav">
   <ul class="nav__list">
     <li class="nav__list-item" *ngFor="let link of links" >
-      <a routerLink="{{link}}" class="nav__link">
-        <img class="nav__icon" src="assets/images/{{link}}_icon.svg"></a>
+      <a routerLink="{{link}}"
+         class="nav__link"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact: true}">
+        <img class="nav__icon" src="assets/images/{{link}}_icon.svg">
+      </a>
     </li>
   </ul>
 </nav>
