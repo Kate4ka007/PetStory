@@ -2,9 +2,14 @@
 
 .nav {
   background: $orange-grad;
+  border-radius: 5px;
+  padding: 15px 10px;
   &__list {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   &__list-item {
     list-style: none;
