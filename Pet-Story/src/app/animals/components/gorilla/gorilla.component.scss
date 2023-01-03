@@ -6,7 +6,7 @@
 
 .animal {
   margin: 0 auto;
-  width: 1162px;
+
 
   &__title {
     text-align: left;
@@ -14,11 +14,16 @@
     color: $black-blue;
     padding-bottom: 7px;
     width: 1162px;
+    margin: 0 auto;
   }
 
   &__youtube {
     width: 1162px;
     margin: 0 auto;
+  }
+
+  &__image {
+    width: 100%;
   }
 
 }

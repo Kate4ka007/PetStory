@@ -16,6 +16,8 @@ import { CheetahComponent } from './components/cheetah/cheetah.component';
 import { VideoComponent } from './components/video/video.component';
 import { InfoComponent } from './components/info/info.component';
 import { CoreModule } from '../core/core.module';
+import { FlowersComponent } from './components/flowers/flowers.component';
+import { GorillaFotoComponent } from './components/gorilla/gorilla-foto/gorilla-foto.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { CoreModule } from '../core/core.module';
     PenguinComponent,
     CheetahComponent,
     VideoComponent,
-    InfoComponent
+    InfoComponent,
+    FlowersComponent,
+    GorillaFotoComponent
   ],
   imports: [
     CommonModule,

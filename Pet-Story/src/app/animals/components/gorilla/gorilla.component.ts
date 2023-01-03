@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class GorillaComponent {
   clicked = false;
+  photoPath = 'assets/images/gorilla_footer.jpg';
+
 
   onClick() {
     this.clicked = true;
