@@ -1,0 +1,53 @@
+@import '../../../../styles.scss';
+
+.info {
+  &__title {
+    @include fonts(48px, 120%);
+    color: $green;
+  }
+
+  &__content {
+    @include fonts(26px, 140%, 500);        
+    color: $gray_smoky;
+  }
+
+  &__text {
+    @include fonts(16px, 140%);
+    color: $black;
+  }
+
+  &__text_before-list {
+    margin-bottom: 0;
+  }
+
+  &__paragraf-name {
+    @include fonts(24px, 120%);
+    color: $black;
+  }
+
+  &__important {
+    color: $green;
+  }
+
+  &__list-item {
+    @include fonts(16px, 140%);
+    color: $black;
+  }
+
+  &__read-button {
+    @include fonts(16px, 140%);
+    text-align: center;
+    color: $black;
+    width: 129px;
+    height: 42px;
+    background: $light_gray;
+    border: 1px solid $black-blue;
+    border-radius: 5px;
+  }
+}
+
+.full {
+  &__item {
+    margin-bottom: 20px;
+  }
+}
