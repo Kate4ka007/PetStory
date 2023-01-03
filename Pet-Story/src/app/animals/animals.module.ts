@@ -15,6 +15,7 @@ import { PenguinComponent } from './components/penguin/penguin.component';
 import { CheetahComponent } from './components/cheetah/cheetah.component';
 import { VideoComponent } from './components/video/video.component';
 import { InfoComponent } from './components/info/info.component';
+import { CoreModule } from '../core/core.module';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { InfoComponent } from './components/info/info.component';
     RouterModule,
     AnimalsRoutingModule,
     SwiperModule,
+    CoreModule,
   ]
 })
 export class AnimalsModule { }
