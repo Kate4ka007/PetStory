@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-
   content = 'Feed a friend now';
+  isInfoClosed = false;
 
+  onClick() {
+    this.isInfoClosed = !this.isInfoClosed;
+  }
 }

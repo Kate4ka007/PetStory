@@ -1,6 +1,9 @@
 @import '../../../../styles.scss';
 
 .info {
+  transition: height 2s;
+
+
   &__title {
     @include fonts(48px, 120%);
     color: $green;
@@ -56,15 +59,49 @@
     background: $light_gray;
     border: 1px solid $black-blue;
     border-radius: 5px;
+    position: relative;
+    z-index: 10;
+    margin-top: 10px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__full {
     padding-top: 48px;
+    transition: 1s;
+    height: 2156px;
   }
 }
 
 .full {
 
+
   &__item {
     margin-bottom: 20px;
   }
+  &__overflow {
+    transition: 2s;
+    display: none;
+    height: 84px;
+    position: absolute;
+    width: 1162px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, #ffffff -13.95%, rgba(255, 248, 248, 0) 88.37%);
+  }
+
+}
+
+.info__full.closed {
+  transition: 2s;
+}
+.info__full.closed {
+  height: 286px;
+  overflow: hidden;
+
+}
+
+.full__overflow.closed {
+  display: block;
+  transition: 2s;
 }
