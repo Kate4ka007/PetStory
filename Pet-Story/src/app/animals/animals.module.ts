@@ -18,6 +18,8 @@ import { InfoComponent } from './components/info/info.component';
 import { CoreModule } from '../core/core.module';
 import { FlowersComponent } from './components/flowers/flowers.component';
 import { GorillaFotoComponent } from './components/gorilla/gorilla-foto/gorilla-foto.component';
+import { PandaVideoComponent } from './components/panda/panda-video/panda-video.component';
+import { PandaInfoComponent } from './components/panda/panda-info/panda-info.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { GorillaFotoComponent } from './components/gorilla/gorilla-foto/gorilla-
     VideoComponent,
     InfoComponent,
     FlowersComponent,
-    GorillaFotoComponent
+    GorillaFotoComponent,
+    PandaVideoComponent,
+    PandaInfoComponent
   ],
   imports: [
     CommonModule,
