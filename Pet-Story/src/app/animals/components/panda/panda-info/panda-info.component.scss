@@ -9,6 +9,11 @@
     color: $green;
   }
 
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__main {
     display: flex;
     gap: 70px;
@@ -18,7 +23,7 @@
   &__content {
     @include fonts(26px, 140%, 500);
     color: $gray_smoky;
-    margin-bottom: 41px;
+    margin-bottom: auto;
   }
 
   &__line {
@@ -62,6 +67,7 @@
     position: relative;
     z-index: 10;
     margin-top: 30px;
+    outline: none;
     &:hover {
       cursor: pointer;
     }
