@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-crocodile',
   templateUrl: './crocodile.component.html',
   styleUrls: ['./crocodile.component.scss']
 })
-export class CrocodileComponent implements OnInit {
+export class CrocodileComponent {
+  clicked = false;
+  photoPath = 'assets/images/crocodile_footer.jpg';
 
-  constructor() { }
 
-  ngOnInit(): void {
+  onClick() {
+    this.clicked = true;
   }
 
 }
