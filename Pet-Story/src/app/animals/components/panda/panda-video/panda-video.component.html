@@ -1,0 +1,67 @@
+<section class="video">
+  <swiper
+    style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff"
+    [spaceBetween]="10"
+    [thumbs]="{ swiper: thumbsSwiper }"
+    class="mySwiper2">
+    <ng-template swiperSlide >
+      <iframe width="1162" height="652" src="https://www.youtube.com/embed/OObOQ2GElhA"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+    </ng-template>
+    <ng-template swiperSlide>
+      <iframe width="1162" height="652" src="https://www.youtube.com/embed/65JHo3Cy2tY"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+    </ng-template>
+    <ng-template swiperSlide>
+      <iframe width="1162" height="652" src="https://www.youtube.com/embed/58aHnTp0-JY"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+    </ng-template>
+    <ng-template swiperSlide>
+      <iframe width="1162" height="652" src="https://www.youtube.com/embed/tCcd6ZkExuo"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+    </ng-template>
+    <ng-template swiperSlide>
+      <iframe width="1162" height="652" src="https://www.youtube.com/embed/OObOQ2GElhA"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      </iframe>
+    </ng-template>
+  </swiper>
+
+
+  <swiper (swiper)="thumbsSwiper = $event" [spaceBetween]="30" [slidesPerView]="4" [freeMode]="true" [navigation]="true"
+  [watchSlidesProgress]="true" class="mySwiper" #Tswiper>
+  <ng-template swiperSlide>
+    <img src="assets/images/panda_video.jpg" />
+  </ng-template>
+  <ng-template swiperSlide>
+    <img src="assets/images/panda_video2.jpg" />
+  </ng-template>
+  <ng-template swiperSlide>
+    <img src="assets/images/panda_video3.jpg" />
+  </ng-template>
+  <ng-template swiperSlide>
+    <img src="assets/images/panda_video4.jpg" />
+  </ng-template>
+  <ng-template swiperSlide>
+    <img src="assets/images/panda_video1.jpg" />
+  </ng-template>
+</swiper>
+</section>
+
+<div class="video__slider-wrapper">
+  <button class="video__button" (click)="slidePrev()">
+    <img src="assets/images/arrow.png" alt="arrow" style="width: 16px; height: 8px"/>
+  </button>
+  <button class="video__button video__button_right" (click)="slideNext()">
+    <img src="assets/images/arrow.png" alt="arrow" style="width: 16px; height: 8px"/>
+  </button>
+</div>
+

@@ -13,7 +13,8 @@
     </div>
   </div>
   <div class="info__line"></div>
-  <div class="info__full">
+  <div class="info__full" [class.closed]="isInfoClosed">
+
     <div class="full__item">
       <span class="info__paragraf-name">Diet: </span><span class="info__text">Herbivore (We provide a medley of fruits and vegetables to our western <span class="info__important">lowland gorillas</span>)</span>
     </div>
@@ -23,7 +24,8 @@
     <div class="full__item">
       <span class="info__paragraf-name">Habitat: </span><span class="info__text">Rainforests (Simulation of the natural environment)</span>
     </div>
-    <div class="full__item">
+    <div class="full__item" style="position: relative;">
+      <div class="full__overflow" [class.closed]="isInfoClosed"></div>
       <h3 class="info__paragraf-name">General Information: </h3><span class="info__text">There are two species of gorilla, each containing two subspecies. The two species are eastern and western, and the four sub-species are <span class="info__important">Cross River</span> and <span class="info__important">Western</span> Lowland (are sub-species of the Western species) and Grauer’s and Mountain (are sub-species of the Eastern species). Western gorillas can be distinguished from other gorilla <span class="info__important">subspecies</span> by their brownish-gray hair, auburn-colored crests and overall smaller size. Eastern gorillas tend to be black in color and larger in size. In all gorillas, males develop silver coloration along their backs as they mature. The species is diurnal, which means they are active during the day, and of all the great apes, gorillas are the most terrestrial. This means that they primarily live on the ground, although they do <span class="info__important">occasionally climb trees</span> to feed and nest. They are also able to stand on two legs for short periods of time.</span>
     </div>
     <div class="full__item">
@@ -66,5 +68,5 @@
       <p class="info__text">Here at Zoo, we provide a medley of fruits and vegetables to our western lowland gorillas. These include apples, oranges, bananas, raisins, sweet potatoes, cabbage, collards, and primate chow. In the morning, vegetables and fruit are chopped up and scattered around the habitat. From there, the gorillas come outside and forage for their food as they would in the wild. Browse foods including bamboo, banana leaves, mulberry, elm and willow are also <span class="info__important">scattered</span> in their habitat.</p>
     </div>
   </div>
-  <button class="info__read-button">Read less</button>
+  <button class="info__read-button" (click)="onClick()">Read less</button>
 </section>
