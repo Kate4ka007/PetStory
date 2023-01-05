@@ -1,12 +1,21 @@
 @import '../../../../styles.scss';
 
 .info {
-  transition: height 2s;
-
 
   &__title {
     @include fonts(48px, 120%);
     color: $green;
+  }
+
+  &__foto {
+    width: 422px;
+    height: 422px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
   }
 
   &__main {
@@ -18,7 +27,7 @@
   &__content {
     @include fonts(26px, 140%, 500);
     color: $gray_smoky;
-    margin-bottom: 41px;
+    margin-bottom: auto;
   }
 
   &__line {
@@ -68,20 +77,20 @@
     }
   }
   &__full {
+    overflow: hidden;
     padding-top: 48px;
-    transition: 1s;
+    transition: 0.5s;
     height: 2156px;
   }
 }
 
 .full {
 
-
   &__item {
     margin-bottom: 20px;
   }
   &__overflow {
-    transition: 2s;
+    transition: 0.5s;
     display: none;
     height: 84px;
     position: absolute;
@@ -94,15 +103,9 @@
 }
 
 .info__full.closed {
-  transition: 2s;
-}
-.info__full.closed {
   height: 286px;
-  overflow: hidden;
-
 }
 
 .full__overflow.closed {
   display: block;
-  transition: 2s;
 }

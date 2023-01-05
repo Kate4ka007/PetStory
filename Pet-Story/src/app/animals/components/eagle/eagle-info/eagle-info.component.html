@@ -1,0 +1,54 @@
+<section class="info">
+  <h2 class="info__title">Eagle</h2>
+  <div class="info__main">
+    <div class="info__foto">
+      <img src="assets/images/eagle-info.png">
+    </div>
+    <div class="info__description">
+      <div class="info__content">There are about <span class="info__important">40 species</span> of these birds in the world. The largest eagle is the <span class="info__important">Golden Eagle</span>. It reaches a length of 95 cm and a wingspan of over two meters. Its plumage ranges from golden to t. brown. They nest exclusively in mountainous areas. They hunt in pairs and mainly during daylight hours. They feed on birds, squirrels, martens, hares and even larger animals.</div>
+      <div class="info__button">
+        <app-button [content]="content"></app-button>
+      </div>
+    </div>
+  </div>
+  <div class="info__line"></div>
+  <div class="info__full" [class.closed]="isInfoClosed">
+
+    <div class="full__item">
+      <span class="info__paragraf-name">Diet: </span><span class="info__text">Carnivore (Fish, lizards, snakes, mice).</span>
+    </div>
+    <div class="full__item">
+      <span class="info__paragraf-name">Range: </span><span class="info__text">Eurasia and Africa</span><span class="info__important"> [VIEW MAP]</span>
+    </div>
+    <div class="full__item">
+      <span class="info__paragraf-name">Habitat: </span><span class="info__text">Mountainous or semi-open landscapes (Simulation of the natural environment).</span>
+    </div>
+    <div class="full__item" style="position: relative;">
+      <div class="full__overflow" [class.closed]="isInfoClosed"></div>
+      <h3 class="info__paragraf-name">General Information: </h3>
+      <p class="info__text">Eagles choose a mate for life. They <span class="info__important">build large</span> and strong nests, using branches. They lay two eggs each. While the female incubates them, the male takes care of her feeding. The hatched offspring can be seen immediately, and are covered with down. The nature of the predator forces the chicks from a young age to fight for their survival. Often one can observe the larger chick trying to push the younger brother out of the nest. Sometimes it may even kill it by fighting for food. In cases where there is enough food, several chicks grow in the nests.</p>
+
+    </div>
+    <div class="full__item">
+      <h3 class="info__paragraf-name">Physical features and characteristics: </h3>
+      <p class="info__text">The eagle is a bird of prey in the hawk family. It is one of the largest birds. The body length of an adult bird varies from 73 to 89 cm, with long wings up to 2.5 m in wingspan, a short tail and strong paws. The massive beak and sharp claws are the main weapons of this raptor.</p>
+      <p class="info__text">Excellent vision allows the eagle to spot a mouse, snake, or lizard from a great height. The eyeball is large and occupies a lot of space in the skull, so eye mobility is low, but the well-developed neck makes up for this <span class="info__important">disadvantage</span>. Eagles use their hearing more for communication than for hunting. The sense of smell is poorly developed.</p>
+    </div>
+    <div class="full__item">
+      <h3 class="info__paragraf-name">Lifestyle and reproduction: </h3>
+      <p class="info__text">Eagles choose a mate for life. They build large and strong nests, using branches. They lay two eggs each. While the female incubates them, the male takes care of her feeding. The hatched offspring can be seen immediately, and are covered with down. The nature of the predator forces the chicks from a young age to fight for their survival. Often one can observe the larger chick trying to push the younger brother out of the nest. Sometimes it may even kill it by fighting for food. In cases where there is enough food, several chicks grow in the nests.</p>
+    </div>
+    <div class="full__item">
+      <h3 class="info__paragraf-name">Habitat: </h3>
+      <p class="info__text">They can be found in the forests, tundras, steppes, and even deserts of <span class="info__important">Eurasia, North America,</span> and <span class="info__important">Africa</span>.</p>
+    </div>
+    <div class="full__item">
+      <h3 class="info__paragraf-name">Diet: </h3>
+      <p class="info__text">They usually hunt alone. The eagle may hover for a long time at a high altitude, looking for prey, or sit on an elevated position and observe the surroundings in search of prey. As a rule, only killed prey goes as food, carrion rarely makes it into their <span class="info__important">diet</span>. It all depends on the type of bird. It can be both insects and large mammals. At the moment of attack, the eagle sharply lowers down, grabs the victim with its paws and strikes it with its beak. The stunned creature is no longer able to resist.</p>
+    </div>
+  </div>
+  <button class="info__read-button" (click)="onClick()">{{isInfoClosed? 'Read more': 'Read less'}}</button>
+</section>
+
+
+
