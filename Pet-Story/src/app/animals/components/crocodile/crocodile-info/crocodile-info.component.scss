@@ -1,8 +1,6 @@
 @import '../../../../../styles.scss';
 
 .info {
-  transition: height 2s;
-
 
   &__title {
     @include fonts(48px, 120%);
@@ -73,20 +71,20 @@
     }
   }
   &__full {
+    overflow: hidden;
     padding-top: 48px;
-    transition: 1s;
+    transition: 0.5s;
     height: 1020px;
   }
 }
 
 .full {
 
-
   &__item {
     margin-bottom: 20px;
   }
   &__overflow {
-    transition: 2s;
+    transition: 0.5s;
     display: none;
     height: 84px;
     position: absolute;
@@ -98,16 +96,11 @@
 
 }
 
-.info__full.closed {
-  transition: 2s;
-}
+
 .info__full.closed {
   height: 280px;
-  overflow: hidden;
-
 }
 
 .full__overflow.closed {
   display: block;
-  transition: 2s;
 }

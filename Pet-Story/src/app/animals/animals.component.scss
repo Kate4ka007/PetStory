@@ -15,3 +15,22 @@
     top: 112px;
   }
 }
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: round 1s linear infinite;
+  border-top: 5px solid rgb(255, 89, 0);
+  background: transparent;
+}
+
+@keyframes round {
+    from {
+        rotate: 0deg;
+
+    }
+    to {
+        rotate: 360deg;
+    }
+}
