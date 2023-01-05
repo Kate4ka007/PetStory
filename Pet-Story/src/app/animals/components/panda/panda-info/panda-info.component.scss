@@ -9,9 +9,15 @@
     color: $green;
   }
 
+  &__foto {
+    width: 422px;
+    height: 422px;
+  }
+
   &__description {
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
   }
 
   &__main {

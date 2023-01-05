@@ -7,6 +7,17 @@
     color: $green;
   }
 
+  &__foto {
+    width: 422px;
+    height: 422px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
   &__main {
     display: flex;
     gap: 70px;
@@ -16,7 +27,7 @@
   &__content {
     @include fonts(26px, 140%, 500);
     color: $gray_smoky;
-    margin-bottom: 41px;
+    margin-bottom: auto;
   }
 
   &__line {

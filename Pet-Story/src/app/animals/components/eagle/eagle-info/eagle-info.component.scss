@@ -12,7 +12,8 @@
     flex-direction: column;
     padding-bottom: 30px;
   }
-    &__foto {
+
+  &__foto {
     width: 422px;
     height: 422px;
   }
@@ -79,12 +80,11 @@
     overflow: hidden;
     padding-top: 48px;
     transition: 0.5s;
-    height: 1020px;
+    height: 850px;
   }
 }
 
 .full {
-
   &__item {
     margin-bottom: 20px;
   }

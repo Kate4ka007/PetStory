@@ -23,6 +23,7 @@ import { PandaInfoComponent } from './components/panda/panda-info/panda-info.com
 import { CrocodileVideoComponent } from './components/crocodile/crocodile-video/crocodile-video.component';
 import { CrocodileInfoComponent } from './components/crocodile/crocodile-info/crocodile-info.component';
 import { EagleVideoComponent } from './components/eagle/eagle-video/eagle-video.component';
+import { EagleInfoComponent } from './components/eagle/eagle-info/eagle-info.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { EagleVideoComponent } from './components/eagle/eagle-video/eagle-video.
     PandaInfoComponent,
     CrocodileVideoComponent,
     CrocodileInfoComponent,
-    EagleVideoComponent
+    EagleVideoComponent,
+    EagleInfoComponent
   ],
   imports: [
     CommonModule,
