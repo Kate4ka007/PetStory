@@ -1,4 +1,4 @@
-@import '../../../../../styles.scss';
+@import "../../../../../styles.scss";
 
 .video {
   width: 1162px;
@@ -46,9 +46,8 @@
     align-items: center;
     margin: 0 auto;
     width: 1324px;
-    top: -137px;
+    top: -166px;
     left: -81px;
-
   }
 }
 
@@ -56,7 +55,6 @@
 @import "swiper/scss/free-mode";
 @import "swiper/scss/navigation";
 @import "swiper/scss/thumbs";
-
 
 .swiper {
   width: 100%;
@@ -130,7 +128,6 @@ app-eagle-video div.swiper-wrapper div.swiper-slide.swiper-slide-prev {
   height: 210px;
 }
 
-
 app-eagle-video .mySwiper div.swiper-wrapper {
   height: 210px;
 }
@@ -141,5 +138,3 @@ app-eagle-video .swiper-button-next::after,
 app-eagle-video .swiper-button-next.swiper-button-disabled {
   display: none;
 }
-
-

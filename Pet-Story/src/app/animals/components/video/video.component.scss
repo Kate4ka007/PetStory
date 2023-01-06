@@ -1,4 +1,4 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
 
 .video {
   width: 1162px;
@@ -46,9 +46,8 @@
     align-items: center;
     margin: 0 auto;
     width: 1324px;
-    top: -137px;
+    top: -166px;
     left: -81px;
-
   }
 }
 
@@ -56,7 +55,6 @@
 @import "swiper/scss/free-mode";
 @import "swiper/scss/navigation";
 @import "swiper/scss/thumbs";
-
 
 .swiper {
   width: 100%;
@@ -75,10 +73,6 @@
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  /*   -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center; */
-  // align-items: center;
 }
 
 .swiper-slide img {
@@ -133,7 +127,6 @@ app-video div.swiper-wrapper div.swiper-slide.swiper-slide-prev {
   width: 268px;
   height: 210px;
 }
-
 
 app-video .mySwiper div.swiper-wrapper {
   height: 210px;

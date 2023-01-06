@@ -1,7 +1,6 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
 
 .info {
-
   &__title {
     @include fonts(48px, 120%);
     color: $green;
@@ -85,7 +84,6 @@
 }
 
 .full {
-
   &__item {
     margin-bottom: 20px;
   }
@@ -97,9 +95,12 @@
     width: 1162px;
     top: 0;
     left: 0;
-    background: linear-gradient(360deg, #ffffff -13.95%, rgba(255, 248, 248, 0) 88.37%);
+    background: linear-gradient(
+      360deg,
+      #ffffff -13.95%,
+      rgba(255, 248, 248, 0) 88.37%
+    );
   }
-
 }
 
 .info__full.closed {

@@ -22,6 +22,7 @@
     @include fonts(16px, 120%);
     color: $black;
     margin-bottom: 5px;
+    text-align: left;
   }
   &__place {
     @include fonts(15px, 120%, 300);
@@ -41,8 +42,6 @@
     white-space: pre-line;
     @include fonts(15px, 120%, 300);
     color: $gray;
-  }
-  &__author-info {
-    // margin-bottom: 10px;
+    text-align: left;
   }
 }

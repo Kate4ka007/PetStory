@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-backstage',
   templateUrl: './backstage.component.html',
-  styleUrls: ['./backstage.component.scss']
+  styleUrls: ['./backstage.component.scss'],
 })
-export class BackstageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class BackstageComponent { }

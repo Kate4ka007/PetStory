@@ -1,16 +1,20 @@
 <nav class="nav">
   <div class="nav__wrapper">
-      <ul class="nav__list" #slider [class.down]="down">
-    <li class="nav__list-item" *ngFor="let link of links" >
-      <a routerLink="{{link}}"
-         class="nav__link"
-         routerLinkActive="active"
-         [routerLinkActiveOptions]="{exact: true}">
-        <img class="nav__icon" src="assets/images/{{link}}_icon.svg">
-      </a>
-    </li>
-  </ul>
+    <ul class="nav__list" #slider [class.down]="down">
+      <li class="nav__list-item" *ngFor="let link of links">
+        <a
+          routerLink="{{ link }}"
+          class="nav__link"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <img class="nav__icon" src="assets/images/{{ link }}_icon.svg" />
+        </a>
+      </li>
+    </ul>
   </div>
 
-  <div class="nav__link" (click)="isDown()" [class.rotate]="isRotate"><img src="assets/images/arrow_down.svg"></div>
+  <div class="nav__link" (click)="isDown()" [class.rotate]="isRotate">
+    <img src="assets/images/arrow_down.svg" />
+  </div>
 </nav>

@@ -1,4 +1,4 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
 
 .nav {
   background: $orange-grad;
@@ -43,17 +43,17 @@
     transform: rotate(180deg);
   }
   &__icon {
-    &:hover{
-      filter: invert(26%) sepia(89%) saturate(1571%) hue-rotate(96deg) brightness(95%) contrast(104%);
+    &:hover {
+      filter: invert(26%) sepia(89%) saturate(1571%) hue-rotate(96deg)
+        brightness(95%) contrast(104%);
     }
-
   }
-
 }
 
 .nav__link.active {
   border: 1px solid hsl(120, 100%, 25%);
   .nav__icon {
-    filter: invert(26%) sepia(89%) saturate(1571%) hue-rotate(96deg) brightness(95%) contrast(104%);
+    filter: invert(26%) sepia(89%) saturate(1571%) hue-rotate(96deg)
+      brightness(95%) contrast(104%);
   }
 }

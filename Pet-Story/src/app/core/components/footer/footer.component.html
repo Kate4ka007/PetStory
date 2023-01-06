@@ -7,11 +7,14 @@
       <div class="footer__form form">
         <h3 class="form__title">Subscribe to our news</h3>
         <form class="form__form" action="">
-          <input class="form__input" type="text" placeholder="Enter your email">
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Enter your email"
+          />
           <button class="form__button" type="submit">Submit</button>
         </form>
       </div>
-
     </div>
     <div class="footer__button">
       <app-button [content]="content" class="test"></app-button>
@@ -19,17 +22,49 @@
   </div>
   <div class="footer__bottom">
     <div class="footer__nets">
-      <a href="##"><img src="assets/images/facebook.png" alt="facebook"></a>
-      <a href="##"><img src="assets/images/twitter.png" alt="twitter"></a>
-      <a href="##"><img src="assets/images/instagram.png" alt="instagram"></a>
-      <a href="##"><img src="assets/images/youtube.png" alt="youtube"></a>
+      <a href="##"><img src="assets/images/facebook.png" alt="facebook" /></a>
+      <a href="##"><img src="assets/images/twitter.png" alt="twitter" /></a>
+      <a href="##"><img src="assets/images/instagram.png" alt="instagram" /></a>
+      <a href="##"><img src="assets/images/youtube.png" alt="youtube" /></a>
     </div>
     <div class="footer__links">
       <ul class="footer__list">
-        <li class="footer__list-item"><a class="footer__link" routerLink="/" routerLinkActivate="active" [class.active]="!(url.includes('map') || url.includes('animals') || url.includes('contact'))">About</a></li>
-        <li class="footer__list-item"><a class="footer__link" routerLink="/animals/gorilla" routerLinkActivate="active" [class.active]="url.includes('animals')">Zoos</a></li>
-        <li class="footer__list-item"><a class="footer__link" routerLink="/map" routerLinkActivate="active" [class.active]="url.includes('map')">Map</a></li>
-        <li class="footer__list-item"><a class="footer__link" routerLink="/contact" routerLinkActivate="active" [class.active]="url.includes('contact')">Contact us</a></li>
+        <li class="footer__list-item">
+          <a
+            class="footer__link"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >About</a
+          >
+        </li>
+        <li class="footer__list-item">
+          <a
+            class="footer__link"
+            routerLink="/animals/gorilla"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Zoos</a
+          >
+        </li>
+        <li class="footer__list-item">
+          <a
+            class="footer__link"
+            routerLink="/map"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Map</a
+          >
+        </li>
+        <li class="footer__list-item">
+          <a
+            class="footer__link"
+            routerLink="/contact"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Contact us</a
+          >
+        </li>
       </ul>
     </div>
     <div class="footer__design">
