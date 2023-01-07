@@ -76,8 +76,7 @@
 
   &__count {
     @include fonts(72px, 80%, 500);
-    text-align: center;
-    text-transform: uppercase;
+    text-align: center;    
     color: $black;
     position: relative
   }
