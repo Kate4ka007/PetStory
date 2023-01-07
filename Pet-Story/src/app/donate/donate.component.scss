@@ -1,0 +1,94 @@
+@import '../../styles.scss';
+
+.donate {
+  min-height: calc(100vh - 495px);
+  background: $orange-grad;
+  width: 100%;
+  
+  &__image {
+    height: 390px;
+    max-width: 1600px;
+    width: 100%;
+    background: url('../../assets/images/giant-panda.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+
+  &__wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  &__reopen {
+    width: 100%;
+    color: $white;
+    margin-bottom: 40px;
+  }
+
+  &__reopen-title {
+    @include fonts(36px, 130%);    
+  }
+
+  &__reopen-content {
+    @include fonts(16px, 140%, 500); 
+  }
+
+  &__pick-block {
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 40px 92px;
+  }
+
+  &__pick-title {
+    @include fonts(36px, 130%);
+    color: #fe9013;
+    margin-bottom: 60px;
+    text-align: left
+  }
+
+  &__subtitle {
+    @include fonts(48px, 120%);
+    color: #fe9013;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    @include fonts(24px, 120%);
+    color: #333B41;
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  &__animal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+
+
+
+  &__count {
+    @include fonts(72px, 80%, 500);
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    position: relative
+  }
+
+  &__count-text {
+    position: absolute;
+    @include fonts(16px, 140%);
+    text-align: center;
+    color: #333b41;
+    top: 80px;
+    left: -86px;
+    width: 215px;
+  }
+}
