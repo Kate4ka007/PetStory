@@ -16,7 +16,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./animals/animals.module').then((m) => m.AnimalsModule),
   },
-  { path: 'donate', loadChildren: () => import('./donate/donate.module').then(m => m.DonateModule) },
+  {
+    path: 'donate',
+    loadChildren: () =>
+      import('./donate/donate.module').then((m) => m.DonateModule),
+  },
 ];
 
 @NgModule({

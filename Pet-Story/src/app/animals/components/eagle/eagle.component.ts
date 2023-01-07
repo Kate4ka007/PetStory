@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class EagleComponent {
   clicked = false;
-  photoPath = 'assets/images/eagle_footer.jpg';
+  photoPath = 'assets/images/eagle_footer.webp';
 
   onClick() {
     this.clicked = true;
