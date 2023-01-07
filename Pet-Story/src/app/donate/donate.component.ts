@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -11,6 +12,12 @@ export class DonateComponent implements OnInit {
 
   animal = '';
 
+  data = '';
+
+  form = new FormGroup({
+    radios: new FormControl('250', Validators.required)
+  });
+
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -20,5 +27,9 @@ export class DonateComponent implements OnInit {
       this.animal = id;
       console.log(this.params);
     });
+  }
+
+  onSubmit() {
+    console.log(this.form.value.radios);
   }
 }
