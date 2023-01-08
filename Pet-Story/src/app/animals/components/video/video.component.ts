@@ -1,8 +1,7 @@
-import { Component, ViewChild, ViewEncapsulation } from "@angular/core";
-import { SwiperComponent } from "swiper/angular";
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { SwiperComponent } from 'swiper/angular';
 
-import SwiperCore, { FreeMode, Navigation, Thumbs } from "swiper";
-
+import SwiperCore, { FreeMode, Navigation, Thumbs } from 'swiper';
 
 SwiperCore.use([FreeMode, Navigation, Thumbs]);
 

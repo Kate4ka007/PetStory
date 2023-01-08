@@ -2,12 +2,12 @@
   <h2 class="info__title">Eagle</h2>
   <div class="info__main">
     <div class="info__foto">
-      <img src="assets/images/eagle-info.png">
+      <img src="assets/images/eagle-info.webp">
     </div>
     <div class="info__description">
       <div class="info__content">There are about <span class="info__important">40 species</span> of these birds in the world. The largest eagle is the <span class="info__important">Golden Eagle</span>. It reaches a length of 95 cm and a wingspan of over two meters. Its plumage ranges from golden to t. brown. They nest exclusively in mountainous areas. They hunt in pairs and mainly during daylight hours. They feed on birds, squirrels, martens, hares and even larger animals.</div>
       <div class="info__button">
-        <app-button [content]="content"></app-button>
+        <app-button [content]="content" routerLink="/donate" [queryParams]="{id: 'eagle'}"></app-button>
       </div>
     </div>
   </div>
@@ -15,10 +15,12 @@
   <div class="info__full" [class.closed]="isInfoClosed">
 
     <div class="full__item">
-      <span class="info__paragraf-name">Diet: </span><span class="info__text">Carnivore (Fish, lizards, snakes, mice).</span>
+      <span class="info__paragraf-name">Diet: </span>
+      <span class="info__text">Carnivore (Fish, lizards, snakes, mice).</span>
     </div>
     <div class="full__item">
-      <span class="info__paragraf-name">Range: </span><span class="info__text">Eurasia and Africa</span><span class="info__important"> [VIEW MAP]</span>
+      <span class="info__paragraf-name">Range: </span>
+      <span class="info__text">Eurasia and Africa</span><span class="info__important"> [VIEW MAP]</span>
     </div>
     <div class="full__item">
       <span class="info__paragraf-name">Habitat: </span><span class="info__text">Mountainous or semi-open landscapes (Simulation of the natural environment).</span>

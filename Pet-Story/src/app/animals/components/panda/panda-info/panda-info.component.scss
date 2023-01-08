@@ -1,12 +1,13 @@
-@import '../../../../../styles.scss';
+@import "../../../../../styles.scss";
 
 .info {
   transition: height 2s;
-
+  padding-top: 80px;
 
   &__title {
     @include fonts(48px, 120%);
     color: $green;
+    margin-bottom: 25px;
   }
 
   &__foto {
@@ -17,7 +18,11 @@
   &__description {
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+  }
+
+  &__button {
+    margin-left: 5px;
   }
 
   &__main {
@@ -80,14 +85,13 @@
   }
   &__full {
     overflow: hidden;
-    padding-top: 48px;
+    padding-top: 37px;
     transition: 0.5s;
     height: 1020px;
   }
 }
 
 .full {
-
   &__item {
     margin-bottom: 20px;
   }
@@ -99,9 +103,12 @@
     width: 1162px;
     top: 0;
     left: 0;
-    background: linear-gradient(360deg, #ffffff -13.95%, rgba(255, 248, 248, 0) 88.37%);
+    background: linear-gradient(
+      360deg,
+      #ffffff -13.95%,
+      rgba(255, 248, 248, 0) 88.37%
+    );
   }
-
 }
 
 .info__full.closed {

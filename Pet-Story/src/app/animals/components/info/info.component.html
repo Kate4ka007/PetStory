@@ -2,13 +2,13 @@
   <h2 class="info__title">Western Lowland Gorilla</h2>
   <div class="info__main">
     <div class="info__foto">
-      <img src="assets/images/gorilla_info.png">
+      <img src="assets/images/gorilla_info.webp">
     </div>
     <div class="info__description">
       <div class="info__content">Western lowland gorillas live in troops led by a dominant silverback, several adult females, and their offspring.
         There are two species of gorilla, each containing two subspecies. The two species are eastern and western, and the four sub-species are <span class="info__important">Cross River</span> and <span class="info__important">Western</span> Lowland (are sub-species of the Western species) and Grauer’s and Mountain (are sub-species of the Eastern species).</div>
       <div class="info__button">
-        <app-button [content]="content"></app-button>
+        <app-button [content]="content" routerLink="/donate" [queryParams]="{id: 'gorilla'}"></app-button>
       </div>
     </div>
   </div>

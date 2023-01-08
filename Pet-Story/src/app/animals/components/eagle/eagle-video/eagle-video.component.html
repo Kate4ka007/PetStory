@@ -1,105 +1,163 @@
 <section class="video">
   <swiper
-    style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff"
+    style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
     [spaceBetween]="10"
     [thumbs]="{ swiper: thumbsSwiper }"
-    class="mySwiper2">
-    <ng-template swiperSlide >
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/UmclL6funN8"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+    class="mySwiper2"
+  >
+    <ng-template swiperSlide>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/UmclL6funN8"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </ng-template>
     <ng-template swiperSlide>
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/eTAsANPVqB8"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/eTAsANPVqB8"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </ng-template>
     <ng-template swiperSlide>
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/ZvX4KElPq2k"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/ZvX4KElPq2k"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </ng-template>
     <ng-template swiperSlide>
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/iC1-E0WHbfI"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/iC1-E0WHbfI"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </ng-template>
     <ng-template swiperSlide>
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/RmmAzrAkKqI"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/RmmAzrAkKqI"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </ng-template>
     <ng-template swiperSlide>
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/PtTZIRwGTF0"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/PtTZIRwGTF0"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </ng-template>
     <ng-template swiperSlide>
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/PK7yQusvoHY"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/PK7yQusvoHY"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </ng-template>
     <ng-template swiperSlide>
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/I95I8f928lU"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/I95I8f928lU"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </ng-template>
-        <ng-template swiperSlide>
-      <iframe width="1162" height="652" src="https://www.youtube.com/embed/2yx7RKxpyzQ"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+    <ng-template swiperSlide>
+      <iframe
+        width="1162"
+        height="652"
+        src="https://www.youtube.com/embed/2yx7RKxpyzQ"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
       </iframe>
     </ng-template>
   </swiper>
 
-
-  <swiper (swiper)="thumbsSwiper = $event" [spaceBetween]="30" [slidesPerView]="4" [freeMode]="true" [navigation]="true"
-  [watchSlidesProgress]="true" class="mySwiper" #Tswiper>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video.jpg" />
-  </ng-template>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video1.jpg" />
-  </ng-template>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video2.jpg" />
-  </ng-template>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video3.jpg" />
-  </ng-template>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video4.jpg" />
-  </ng-template>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video5.jpg" />
-  </ng-template>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video6.jpg" />
-  </ng-template>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video7.jpg" />
-  </ng-template>
-  <ng-template swiperSlide>
-    <img src="assets/images/eagle_video8.jpg" />
-  </ng-template>
-</swiper>
+  <swiper
+    (swiper)="thumbsSwiper = $event"
+    [spaceBetween]="30"
+    [slidesPerView]="4"
+    [freeMode]="true"
+    [navigation]="true"
+    [watchSlidesProgress]="true"
+    class="mySwiper"
+    #Tswiper
+  >
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video.webp" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video1.webp" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video2.webp" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video3.webp" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video4.webp" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video5.webp" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video6.webp" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video7.jpg" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/images/eagle_video8.webp" />
+    </ng-template>
+  </swiper>
 </section>
 
 <div class="video__slider-wrapper">
   <button class="video__button" (click)="slidePrev()">
-    <img src="assets/images/arrow.png" alt="arrow" style="width: 16px; height: 8px"/>
+    <img
+      src="assets/images/arrow.png"
+      alt="arrow"
+      style="width: 16px; height: 8px"
+    />
   </button>
   <button class="video__button video__button_right" (click)="slideNext()">
-    <img src="assets/images/arrow.png" alt="arrow" style="width: 16px; height: 8px"/>
+    <img
+      src="assets/images/arrow.png"
+      alt="arrow"
+      style="width: 16px; height: 8px"
+    />
   </button>
 </div>
-
-
-

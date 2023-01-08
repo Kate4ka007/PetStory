@@ -2,12 +2,12 @@
   <h2 class="info__title">Alligator</h2>
   <div class="info__main">
     <div class="info__foto">
-      <img src="assets/images/crocodile-info.png">
+      <img src="assets/images/crocodile-info.webp">
     </div>
     <div class="info__description">
       <div class="info__content">Alligators differ from other members of the crocodile family in having a <span class="info__important">wider snout</span>; their eyes are more dorsal (at the top of the head). Large alligators' eyes glow red; small alligators' eyes glow green. Alligators can be spotted in the dark by this sign.</div>
       <div class="info__button">
-        <app-button [content]="content"></app-button>
+        <app-button [content]="content" routerLink="/donate" [queryParams]="{id: 'alligator'}"></app-button>
       </div>
     </div>
   </div>
@@ -15,13 +15,20 @@
   <div class="info__full" [class.closed]="isInfoClosed">
 
     <div class="full__item">
-      <span class="info__paragraf-name">Diet: </span><span class="info__text">Carnivore (Fish, lizards, <span class="info__important">snakes</span>, mice)</span>
+      <span class="info__paragraf-name">Diet: </span>
+      <span class="info__text">Carnivore (Fish, lizards,
+        <span class="info__important">snakes</span>
+        , mice)
+      </span>
     </div>
     <div class="full__item">
-      <span class="info__paragraf-name">Range: </span><span class="info__text">Florida, United States of America</span><span class="info__important"> [VIEW MAP]</span>
+      <span class="info__paragraf-name">Range: </span>
+      <span class="info__text">Florida, United States of America</span>
+      <span class="info__important"> [VIEW MAP]</span>
     </div>
     <div class="full__item">
-      <span class="info__paragraf-name">Habitat: </span><span class="info__text">Alligators live mostly in fresh brackish water, in marshes, canals, and lakes.</span>
+      <span class="info__paragraf-name">Habitat: </span>
+      <span class="info__text">Alligators live mostly in fresh brackish water, in marshes, canals, and lakes.</span>
     </div>
     <div class="full__item" style="position: relative;">
       <div class="full__overflow" [class.closed]="isInfoClosed"></div>

@@ -1,12 +1,11 @@
-@import '../../../../../styles.scss';
+@import "../../../../../styles.scss";
 
 .video {
   width: 1162px;
 
   &__button {
     display: flex;
-    width: 62px;
-    height: 62px;
+    @include size(62px, 62px);
     border-radius: 100%;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
     align-items: center;
@@ -46,9 +45,8 @@
     align-items: center;
     margin: 0 auto;
     width: 1324px;
-    top: -137px;
+    top: -166px;
     left: -81px;
-
   }
 }
 
@@ -56,7 +54,6 @@
 @import "swiper/scss/free-mode";
 @import "swiper/scss/navigation";
 @import "swiper/scss/thumbs";
-
 
 .swiper {
   width: 100%;
@@ -79,14 +76,12 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  @include size(100%, 100%);
   object-fit: cover;
 }
 
 .swiper {
-  width: 100%;
-  height: 300px;
+  @include size(100%, 300px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -97,8 +92,7 @@
 }
 
 .mySwiper2 {
-  height: 652px;
-  width: 100%;
+  @include size(100%, 652px);
   margin-bottom: 80px;
 }
 
@@ -108,8 +102,7 @@
 }
 
 .mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
+  @include size(25%, 100%);
   opacity: 0.4;
 }
 
@@ -119,17 +112,14 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  @include size(100%, 100%);
   object-fit: cover;
 }
 
 app-panda-video div.swiper-wrapper div.swiper-slide.swiper-slide-visible,
 app-panda-video div.swiper-wrapper div.swiper-slide.swiper-slide-prev {
-  width: 268px;
-  height: 210px;
+  @include size(268px, 210px);
 }
-
 
 app-panda-video .mySwiper div.swiper-wrapper {
   height: 210px;

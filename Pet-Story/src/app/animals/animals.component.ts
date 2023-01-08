@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Subscription } from 'rxjs';
 import {
   Router,
-  // import as RouterEvent to avoid confusion with the DOM Event
   Event as RouterEvent,
   NavigationStart,
   NavigationEnd,
   NavigationCancel,
-  NavigationError
-} from '@angular/router'
+  NavigationError,
+} from '@angular/router';
 
 @Component({
   selector: 'app-animals',
   templateUrl: './animals.component.html',
-  styleUrls: ['./animals.component.scss']
+  styleUrls: ['./animals.component.scss'],
 })
 export class AnimalsComponent {
   public loading = false;

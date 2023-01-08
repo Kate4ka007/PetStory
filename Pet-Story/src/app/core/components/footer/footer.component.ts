@@ -8,7 +8,7 @@ import { NavigationEnd, Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None,
 })
 export class FooterComponent implements OnInit {
-  content = "donate for volunteers";
+  content = 'donate for volunteers';
   url = '';
 
   constructor(private router: Router) { }
