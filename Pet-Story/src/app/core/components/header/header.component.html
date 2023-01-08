@@ -1,0 +1,43 @@
+<header class="header">
+  <div class="logo"><app-logo></app-logo></div>
+  <nav class="header__nav nav">
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <a
+          class="nav__list-link"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >About
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a
+          class="nav__list-link"
+          routerLink="/map"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Map</a
+        >
+      </li>
+      <li class="nav__list-item">
+        <a
+          class="nav__list-link"
+          routerLink="/animals/gorilla"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Zoos</a
+        >
+      </li>
+      <li class="nav__list-item">
+        <a
+          class="nav__list-link"
+          routerLink="/contact"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Contact us</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

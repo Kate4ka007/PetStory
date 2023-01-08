@@ -1,0 +1,21 @@
+.flowers {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 185px;
+    &__item {
+      transform: scale(-1, 1);
+      width: 306px;
+      height: 229px;
+      margin-bottom: -1px;
+    }
+
+    &__item-image {
+      width: 100%;
+    }
+
+    &__item-leave {
+      height: 190px;
+    }
+}

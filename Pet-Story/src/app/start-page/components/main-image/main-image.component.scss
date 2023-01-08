@@ -1,0 +1,189 @@
+@import "../../../../styles.scss";
+* {
+  box-sizing: border-box;
+}
+
+.main-image {
+  background: $white;
+  &__content {
+    width: 100%;
+  }
+
+  &__part-top {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 180px;
+  }
+  &__title {
+    width: calc(100% - 200px);
+    display: flex;
+    padding-left: 220px;
+    padding-top: 140px;
+    gap: 90px;
+  }
+
+  &__img {
+    width: 200px;
+    margin-top: 15px;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__title-image {
+    width: 610px;
+  }
+
+  &__title-content {
+    width: 465px;
+  }
+
+  &__title-man {
+    width: 100%;
+  }
+  &__content-title {
+    @include fonts(48px, 120%);
+    color: $black-blue;
+    padding-bottom: 25px;
+  }
+
+  &__content-subtitle {
+    @include fonts(24px, 120%);
+    color: $black-blue;
+    padding-bottom: 25px;
+    margin-top: 55px;
+  }
+
+  &__content-text {
+    @include fonts(16px, 140%);
+    color: $black-blue;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__slider-wrapper {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: repeat(12, 366px);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 30px;
+    transition: 1.5s;
+  }
+
+  &__slider-container {
+    overflow: hidden;
+    width: 1158px;
+    height: 872px;
+  }
+
+  &__button {
+    display: flex;
+    @include size(62px, 62px);
+    border-radius: 100%;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background: #e47209;
+    }
+    &:active {
+      cursor: pointer;
+      background: $green;
+    }
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
+  }
+  &__button_right {
+    transform: rotate(-180deg);
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
+  }
+
+  &__bottom-button {
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    border-radius: 25px;
+    @include fonts(16px, 150%, 500);
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    padding: 16px 50px 16px 50px;
+    outline: none;
+    border: none;
+    margin-right: -76px;
+    &:hover {
+      cursor: pointer;
+      background: #e47209;
+    }
+    &:active {
+      cursor: pointer;
+      background: $green;
+    }
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
+  }
+  &__part-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    top: 3px;
+    height: 240px;
+  }
+
+  &__bottom-center {
+    align-self: center;
+  }
+}
+
+.animal {
+  width: 366px;
+  height: 426px;
+  border: 1px solid $orange;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  &:hover &__overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+  }
+  &:hover &__info {
+    position: relative;
+    margin-top: -150px;
+    z-index: 50;
+    transition: 0.7s;
+  }
+  &:hover &__name,
+  &:hover &__country {
+    color: white;
+  }
+
+  &__name {
+    @include fonts(16px, 140%, 500);
+    text-transform: uppercase;
+    color: $black;
+  }
+  &__country {
+    @include fonts(15px, 120%, 300);
+    color: $black;
+  }
+  &__image {
+    display: block;
+  }
+}

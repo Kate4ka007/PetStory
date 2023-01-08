@@ -1,0 +1,59 @@
+@import "../../../../styles.scss";
+
+.nav {
+  background: $orange-grad;
+  border-radius: 5px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__wrapper {
+    height: 530px;
+    overflow: hidden;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 1s;
+  }
+  &__list.down {
+    transform: translate(0, -91px);
+  }
+  &__list-item {
+    list-style: none;
+  }
+  &__link {
+    background: white;
+    border: 1px solid orangered;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    &:hover {
+      border: 1px solid hsl(120, 100%, 25%);
+    }
+  }
+  &__link.rotate {
+    transform: rotate(180deg);
+  }
+  &__icon {
+    &:hover {
+      filter: invert(26%) sepia(89%) saturate(1571%) hue-rotate(96deg)
+        brightness(95%) contrast(104%);
+    }
+  }
+}
+
+.nav__link.active {
+  border: 1px solid hsl(120, 100%, 25%);
+  .nav__icon {
+    filter: invert(26%) sepia(89%) saturate(1571%) hue-rotate(96deg)
+      brightness(95%) contrast(104%);
+  }
+}

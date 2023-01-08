@@ -1,0 +1,119 @@
+@import "../../../../styles.scss";
+
+.pick {
+  background: $orange-grad;
+  opacity: 0.9;
+  padding: 70px 220px 100px 220px;
+  &__content {
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+  }
+
+  &__top {
+    padding-top: 40px;
+  }
+
+  &__top-title {
+    @include fonts(48px, 120%);
+    text-align: center;
+    color: $orange;
+    padding-bottom: 30px;
+  }
+
+  &__top-subtitle {
+    @include fonts(24px, 120%, 500);
+    color: $black-blue;
+    padding-bottom: 40px;
+    padding-left: 100px;
+  }
+
+  &__bottom-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+
+  &__top-paragraph {
+    @include fonts(16px, 130%);
+    color: $black-blue;
+    width: 863px;
+    padding-left: 100px;
+  }
+  &__top-paragraph:first-child {
+    @include fonts(16px, 130%, 700);
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  &__top {
+    margin-bottom: 60px;
+  }
+
+  &__bottom-title {
+    @include fonts(36px, 130%);
+    color: $black-blue;
+    text-align: center;
+  }
+
+  &__arrow {
+    margin-top: -70px;
+  }
+
+  &__bottom-title {
+    margin-bottom: 40px;
+  }
+  &__bottom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    border-radius: 25px;
+    @include fonts(16px, 150%, 500);
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    padding: 16px 50px 16px 50px;
+    outline: none;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background: #e47209;
+    }
+    &:active {
+      cursor: pointer;
+      background: $green;
+    }
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
+  }
+  &__bottom {
+    padding-bottom: 60px;
+  }
+}
+
+.card {
+  border-radius: 5px;
+  width: 170px;
+  height: 245px;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  &__image {
+    margin-bottom: 30px;
+    border: 1px solid $orange;
+    background: $white;
+    border-radius: 5px;
+    width: 170px;
+    min-height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,107 @@
+<section class="donate">
+  <div class="donate__image"></div>
+  <div class="donate__wrapper">
+    <div class="donate__reopen">
+      <h2 class="donate__reopen-title">
+        THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+      </h2>
+      <p class="donate__reopen-content">
+        Even though the Zoo has been able to reopen, we are at a greatly reduced
+        capacity with educational programs and public and private events
+        cancelled or postponed for additional months. We need you now more than
+        ever to help ensure that we overcome these challenges. We have been
+        actively raising funds in the community, and we are grateful for the
+        generosity. But much more support is still needed, and we need your
+        help! Please consider a gift today – no matter what size – to help us
+        sustain our mission.
+      </p>
+    </div>
+    <div class="donate__pick">
+      <h2 class="donate__pick-title">Donation Information</h2>
+      <div class="donate__pick-block">
+        <h1 class="donate__subtitle">Pick and feed a friend</h1>
+        <p class="donate__paragraph">
+          We know the animals bring you joy, and in these extraordinary times,
+          we’re glad.
+        </p>
+        <div class="donate__animal">
+          <div class="donate__count">
+            4
+            <div class="donate__count-text">{{ animal | titlecase }} diet for the day.</div>
+          </div>
+
+          <div>
+            <img src="assets/images/x_icon.png" />
+          </div>
+          <img src="{{ params }}" alt="{{ animal }}" />
+        </div>
+        <div class="donate__amount">
+          <form [formGroup]="form" class="donate__form" (ngSubmit)="onSubmit()">
+            <div class="donate__inputs">
+              <input class="donate__form-item" type="radio" id="radio1" name="radios" value="5000" formControlName="radios">
+              <label for="radio1">
+                <div style="width: 30px;">
+                  <p class="donate__item" style="text-align: center;"><span class="donate__round"></span></p>
+                  <p style="text-align: center;">5000</p>
+                </div>
+              </label>
+              <input class="donate__form-item" type="radio" id="radio2" name="radios" value="2500" formControlName="radios">
+              <label for="radio2">
+                <div style="width: 30px;">
+                  <p class="donate__item" style="text-align: center;"><span class="donate__round"></span></p>
+                  <p style="text-align: center;">2500</p>
+                </div>
+              </label>
+              <input class="donate__form-item" type="radio" id="radio3" name="radios" value="1000" formControlName="radios">
+              <label for="radio3">
+                <div style="width: 30px;">
+                  <p class="donate__item" style="text-align: center;"><span class="donate__round"></span></p>
+                  <p style="text-align: center;">1000</p>
+                </div>
+              </label>
+              <input class="donate__form-item" type="radio" id="radio4" name="radios" value="500" formControlName="radios">
+              <label for="radio4">
+                <div style="width: 30px;">
+                  <p class="donate__item" style="text-align: center;"><span class="donate__round"></span></p>
+                  <p style="text-align: center;">750</p>
+                </div>
+              </label>
+              <input class="donate__form-item" type="radio" id="radio5" name="radios" value="250" formControlName="radios" checked>
+              <label for="radio5">
+                <div style="width: 30px;">
+                  <p class="donate__item" style="text-align: center;"><span class="donate__round"></span></p>
+                  <p style="text-align: center;">500</p>
+                </div>
+              </label>
+              <input class="donate__form-item" type="radio" id="radio6" name="radios" value="100" formControlName="radios">
+              <label for="radio6">
+                <div style="width: 30px;">
+                  <p class="donate__item" style="text-align: center;"><span class="donate__round"></span></p>
+                  <p style="text-align: center;">100</p>
+                </div>
+              </label>
+              <input class="donate__form-item" type="radio" id="radio7" name="radios" value="50" formControlName="radios">
+              <label for="radio7">
+                <div style="width: 30px;">
+                  <p class="donate__item" style="text-align: center;"><span class="donate__round"></span></p>
+                  <p style="text-align: center;">50</p>
+                </div>
+              </label>
+              <input class="donate__form-item" type="radio" id="radio8" name="radios" value="25" formControlName="radios">
+              <label for="radio8">
+                <div style="width: 30px;">
+                  <p class="donate__item" style="text-align: center;"><span class="donate__round"></span></p>
+                  <p style="text-align: center;">25</p>
+                </div>
+              </label>
+            </div>
+            <div class="donate__button"><button type="submit">Submit</button></div>
+          </form>
+        </div>
+        <div class="donate__option"></div>
+
+        <p class="donate__share">Share with your friends on social networks</p>
+      </div>
+    </div>
+  </div>
+</section>

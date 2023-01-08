@@ -1,0 +1,53 @@
+@import "../../../../styles.scss";
+
+:host {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  height: 80px;
+}
+
+.header {
+  padding-left: 220px;
+  display: flex;
+  align-items: center;
+  background: $black;
+  gap: 65px;
+  height: 80px;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__list-link {
+    color: $white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    list-style: none;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: $white;
+    }
+  }
+
+  &__list-link.active {
+    color: $orange;
+  }
+}

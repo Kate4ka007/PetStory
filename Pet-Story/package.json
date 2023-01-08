@@ -1,0 +1,52 @@
+{
+  "name": "pet-story",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --base-href='https://Kate4ka007.github.io/PetStory/'",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "lint": "ng lint",
+    "deploy": "ng deploy --base-href='https://Kate4ka007.github.io/PetStory/'"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^14.1.0",
+    "@angular/common": "^14.1.0",
+    "@angular/compiler": "^14.1.0",
+    "@angular/core": "^14.1.0",
+    "@angular/forms": "^14.1.0",
+    "@angular/platform-browser": "^14.1.0",
+    "@angular/platform-browser-dynamic": "^14.1.0",
+    "@angular/router": "^14.1.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.9.1",
+    "leaflet": "^1.9.3",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.1.0",
+    "@angular/cli": "~14.1.0",
+    "@angular/compiler-cli": "^14.1.0",
+    "@types/jasmine": "~4.0.0",
+    "@types/leaflet": "^1.7.11",
+    "@typescript-eslint/eslint-plugin": "5.37.0",
+    "@typescript-eslint/parser": "5.37.0",
+    "angular-cli-ghpages": "^1.0.5",
+    "dep": "^0.18.3",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jasmine-core": "~4.2.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "swiper": "^8.4.5",
+    "typescript": "~4.7.2"
+  }
+}

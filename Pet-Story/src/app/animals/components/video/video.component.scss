@@ -1,0 +1,140 @@
+@import "../../../../styles.scss";
+
+.video {
+  width: 1162px;
+
+  &__button {
+    display: flex;
+    width: 62px;
+    height: 62px;
+    border-radius: 100%;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background: #e47209;
+    }
+
+    &:active {
+      cursor: pointer;
+      background: $green;
+    }
+
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
+  }
+
+  &__button_right {
+    transform: rotate(-180deg);
+
+    &:disabled {
+      background: $gray;
+      cursor: default;
+    }
+  }
+
+  &__slider-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1324px;
+    top: -166px;
+    left: -81px;
+  }
+}
+
+@import "swiper/scss";
+@import "swiper/scss/free-mode";
+@import "swiper/scss/navigation";
+@import "swiper/scss/thumbs";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 652px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+app-video div.swiper-wrapper div.swiper-slide.swiper-slide-visible,
+app-video div.swiper-wrapper div.swiper-slide.swiper-slide-prev {
+  width: 268px;
+  height: 210px;
+}
+
+app-video .mySwiper div.swiper-wrapper {
+  height: 210px;
+}
+
+app-video .swiper-button-prev.swiper-button-disabled,
+app-video .swiper-button-prev::after,
+app-video .swiper-button-next::after,
+app-video .swiper-button-next.swiper-button-disabled {
+  display: none;
+}
