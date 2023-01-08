@@ -82,8 +82,7 @@
 
   &__button {
     display: flex;
-    width: 62px;
-    height: 62px;
+    @include size(62px, 62px);
     border-radius: 100%;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
     align-items: center;

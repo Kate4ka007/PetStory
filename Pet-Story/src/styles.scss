@@ -40,4 +40,16 @@ body {
   line-height: $line-height;
 }
 
+@mixin flex($justify: center, $align: center, $direction: column) {
+ display: flex;
+ flex-direction: $direction;
+ justify-content: $justify;
+ align-items: $align;
+}
+
+@mixin size($weight: 100%, $height: auto) {
+  width: $weight;
+  height: $height;
+}
+
 

@@ -6,9 +6,8 @@
   width: 100%;
 
   &__image {
-    height: 390px;
     max-width: 1600px;
-    width: 100%;
+    @include size(100%, 390px);
     background: url('../../assets/images/giant-panda.png');
     background-repeat: no-repeat;
     background-position: left center;
@@ -22,7 +21,7 @@
   }
 
   &__reopen {
-    width: 100%;
+    @include size();
     color: $white;
     margin-bottom: 40px;
   }
@@ -36,7 +35,7 @@
   }
 
   &__pick-block {
-    width: 100%;
+    @include size();
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(2px);
@@ -66,13 +65,9 @@
   }
 
   &__animal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
     gap: 70px;
   }
-
-
 
   &__count {
     @include fonts(72px, 80%, 500);
@@ -88,18 +83,27 @@
     color: #333b41;
     top: 80px;
     left: -86px;
-    width: 215px;
+    @include size(215px);
   }
 
   &__inputs,
   &__labels {
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between);
     padding: 5px 20px;
   }
 
   input {
     display: none;
+  }
+
+  &__item {
+    @include flex();
+  }
+
+  &__round {
+    @include size(10px, 10px);
+    background-color: $yellow;
+    border-radius: 100%;
   }
 }
 

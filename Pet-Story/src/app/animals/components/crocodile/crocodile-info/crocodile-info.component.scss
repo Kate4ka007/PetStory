@@ -89,9 +89,8 @@
   &__overflow {
     transition: 0.5s;
     display: none;
-    height: 84px;
+    @include size(1162px, 84px);
     position: absolute;
-    width: 1162px;
     top: 0;
     left: 0;
     background: linear-gradient(
