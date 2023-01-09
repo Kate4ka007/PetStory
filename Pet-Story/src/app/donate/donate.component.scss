@@ -13,7 +13,6 @@
     background-position: left center;
   }
 
-
   &__wrapper {
     max-width: 1160px;
     margin: 0 auto;
@@ -65,15 +64,17 @@
   }
 
   &__animal {
-    @include flex();
+    @include flex(center, center, row);
     gap: 70px;
+    margin-bottom: 50px;
   }
 
   &__count {
     @include fonts(72px, 80%, 500);
     text-align: center;
     color: $black;
-    position: relative
+    position: relative;
+    width: 140px;
   }
 
   &__count-text {
@@ -82,18 +83,39 @@
     text-align: center;
     color: #333b41;
     top: 80px;
-    left: -86px;
-    @include size(215px);
+    left: -10px;
+    @include size(160px);
+  }
+
+  &__amount {
+    @include fonts(16px, 140%);
+    color: $black;
+
+  }
+
+  &__amount-title {
+    @include fonts(16px, 140%);
+    color: $black;
+    margin-bottom: 10px;
   }
 
   &__inputs,
   &__labels {
-    @include flex(space-between);
-    padding: 5px 20px;
+    @include flex(space-between, baseline, row);
+    padding: 5px 0px;
+    z-index: 10;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    margin-bottom: 60px;
+
   }
 
-  input {
+  &__form-item {
     display: none;
+  }
+
+  &__form {
+    position: relative;
   }
 
   &__item {
@@ -105,18 +127,71 @@
     background-color: $yellow;
     border-radius: 100%;
   }
+
+  &__background {
+    background: $black-blue;
+    position: absolute;
+    top: 12px;
+    width: 100%;
+    height: 27px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    padding: 0 27px;
+    border-radius: 2px;
+    left: 0;
+  }
+
+  &__line {
+    @include size(100%, 2px);
+    background:  #72828E;
+    margin-left: 7px;
+  }
+
+  &__round-out {
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__price {
+    @include fonts(26px, 140%, 500);
+    text-transform: uppercase;
+    color: #333B41;
+    margin-left: -12px;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
-input[type=radio]:checked+ label {
+input[type=radio]:checked+ label .donate__price{
   color: orange;
   text-align: center;
 }
 
-input[type=radio]:checked + label p.item {
+input[type=radio]:checked + label p.donate__item {
   text-align: center;
-  border: 1px orange solid;
+  border: 2px solid orange;
   border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 8px;
+  margin-left: -5px;
 }
+
+input[type=radio]:checked + label p.donate__item .donate__round-out {
+  border: 2px solid orange;
+}
+
+
 
 
 
